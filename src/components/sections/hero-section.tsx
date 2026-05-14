@@ -1,4 +1,8 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Container } from "@/components/layout/container";
 import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -8,8 +12,37 @@ import { profileData } from "@/data/profile";
 import { cn } from "@/lib/utils";
 import { Cpu, Bot, BrainCircuit } from "lucide-react";
 
+const HERO_TYPING_WORDS = ["Hello.", "Build.", "Automate.", "Audit.", "Ship."];
+
 export function HeroSection() {
   const { hero } = profileData;
+  const [wordIndex, setWordIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentWord = HERO_TYPING_WORDS[wordIndex];
+    const isWordComplete = displayText === currentWord;
+    const isWordCleared = displayText.length === 0;
+
+    const timeout = window.setTimeout(() => {
+      if (!isDeleting) {
+        setDisplayText(currentWord.slice(0, displayText.length + 1));
+        if (isWordComplete) {
+          setIsDeleting(true);
+        }
+        return;
+      }
+
+      setDisplayText(currentWord.slice(0, Math.max(displayText.length - 1, 0)));
+      if (isWordCleared) {
+        setIsDeleting(false);
+        setWordIndex((prev) => (prev + 1) % HERO_TYPING_WORDS.length);
+      }
+    }, isWordComplete && !isDeleting ? 850 : isWordCleared && isDeleting ? 180 : isDeleting ? 55 : 110);
+
+    return () => window.clearTimeout(timeout);
+  }, [displayText, isDeleting, wordIndex]);
 
   return (
     <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-18 md:pt-40 md:pb-20 lg:pt-56 lg:pb-32">
@@ -88,9 +121,27 @@ export function HeroSection() {
               {/* Visual Identity Block - AI Integration Focus */}
               <div className="relative mx-auto aspect-square w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[440px]">
                 {/* Main Card */}
-                <Card variant="elevated" className="absolute inset-0 flex flex-col overflow-hidden rounded-[2rem] border-2 border-border/50 bg-surface p-4 sm:p-6 lg:p-8">
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-lg font-bold text-white shadow-[0_0_20px_rgba(166,138,100,0.3)] sm:mb-6 sm:h-14 sm:w-14 sm:text-xl lg:mb-8 lg:h-16 lg:w-16 lg:rounded-2xl lg:text-2xl">
-                    AE
+                <Card
+                  variant="elevated"
+                  className="absolute inset-0 flex flex-col overflow-hidden rounded-[2rem] border-2 border-border/50 bg-surface p-4 sm:p-6 lg:p-8"
+                >
+                  <div className="mb-5 flex items-start gap-2.5 sm:mb-6 sm:gap-3 lg:mb-8">
+                    <div className="h-14 w-14 overflow-hidden rounded-xl border border-border/50 bg-surface-elevated shadow-[0_0_20px_rgba(166,138,100,0.16)] sm:h-16 sm:w-16 sm:rounded-2xl lg:h-20 lg:w-20">
+                      <Image
+                        src="/AEProfile.png"
+                        alt="Portrait of Arjay Escabas"
+                        width={989}
+                        height={606}
+                        className="h-full w-full object-cover"
+                        priority
+                      />
+                    </div>
+                    <div className="mt-1 rounded-full border border-accent/20 bg-surface-elevated/70 px-3 py-2 text-[11px] font-medium tracking-tight text-accent shadow-sm sm:px-4 sm:text-xs">
+                      <span className="min-w-[4.75rem] sm:min-w-[5.5rem] inline-flex items-center justify-start">
+                        {displayText}
+                        <span className="ml-0.5 inline-block h-[1em] w-px animate-pulse bg-accent/80" aria-hidden="true" />
+                      </span>
+                    </div>
                   </div>
                   <div className="mb-auto space-y-3 sm:space-y-4">
                     <div className="h-2 w-full bg-accent/20 rounded-full overflow-hidden">

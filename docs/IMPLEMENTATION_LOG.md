@@ -118,3 +118,18 @@ This log tracks major implementation milestones and content updates for the my-p
 - Updated the hero section for cleaner mobile and tablet spacing.
 - Centered the hero name and sub-label across all breakpoints.
 - Scaled the hero visual stack down on smaller screens to prevent overflow.
+
+## [2026-05-14] - Hero Portrait Swap
+### Completed
+- Removed the experimental hover-card cursor effect from the hero visual cards.
+- Replaced the `AE` badge block in the hero card with an illustrated portrait asset based on the provided reference image.
+
+## [2026-05-14] - Hero Cursor Hover Effect
+### Completed
+- Added a mouse-following circular hover effect to the hero visual card and both floating cards.
+- Used a bright outer halo with a differently tinted inner circle so the interaction reads clearly on the dark hero surface.
+
+## [2026-05-14] - Hero Typing Label
+### Completed
+- Added a small typing animation beside the hero portrait inside the right-side visual card.
+- Configured the label to cycle through five short words with type-and-erase behavior.
