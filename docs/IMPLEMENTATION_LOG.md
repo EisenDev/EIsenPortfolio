@@ -112,3 +112,9 @@ This log tracks major implementation milestones and content updates for the my-p
 ### Completed
 - Updated the contact section headline from problem-solving language to workflow automation language.
 - Synced the change in both `docs/CONTENT_GUIDE.md` and the rendered profile data source.
+
+## [2026-05-14] - Hero Responsive Alignment Update
+### Completed
+- Updated the hero section for cleaner mobile and tablet spacing.
+- Centered the hero name and sub-label across all breakpoints.
+- Scaled the hero visual stack down on smaller screens to prevent overflow.
