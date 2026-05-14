@@ -107,3 +107,8 @@ This log tracks major implementation milestones and content updates for the my-p
 - Updated the PDF generator content to match the current resume structure and wording.
 - Restored `/resume` to redirect to `Arjay-Escabas-Resume.pdf`.
 - Kept homepage portfolio content unchanged while switching only the resume delivery format.
+
+## [2026-05-14] - Contact CTA Copy Update
+### Completed
+- Updated the contact section headline from problem-solving language to workflow automation language.
+- Synced the change in both `docs/CONTENT_GUIDE.md` and the rendered profile data source.

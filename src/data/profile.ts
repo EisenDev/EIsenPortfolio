@@ -274,7 +274,7 @@ export const profileData = {
   },
   contact: {
     eyebrow: "Get in touch",
-    title: "Got a problem? Let's simplify it.",
+    title: "Got a workflow? Let’s automate it.",
     description:
       "Reach out through the platforms below if you want to discuss AI-powered products, automation workflows, system development, or practical implementation work.",
     primaryCTA: "GitHub",

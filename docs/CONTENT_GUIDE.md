@@ -64,7 +64,7 @@ This document provides guidelines and placeholders for all copy and content with
   - Add a clear disclaimer for Kairos-style analytical systems: experimental and not financial advice.
 
 ### 7. Get in Touch
-- **CTA:** "Got a problem? Let's simplify it."
+- **CTA:** "Got a workflow? Let’s automate it."
 - **Links:** GitHub, LinkedIn, OnlineJobs.ph, Resume.
 - **Note:** Do not include placeholder email when real contact links are available.
 
