@@ -42,7 +42,7 @@ This log tracks major implementation milestones and content updates for the my-p
 
 ## [2026-05-13] - Phase 10: Content Integration
 ### Completed
-- Updated branding to `AE.` and repositioned Arjay as an AI Application Developer / AI Engineer.
+- Updated branding to `AE.` and repositioned Arjay as an AI Application & Full Stack Developer.
 - Simplified all-caps wording and replaced placeholder contact details with real links.
 - Added and refined the standalone resume route.
 - Updated the selected work section and experience wording.
@@ -133,3 +133,8 @@ This log tracks major implementation milestones and content updates for the my-p
 ### Completed
 - Added a small typing animation beside the hero portrait inside the right-side visual card.
 - Configured the label to cycle through five short words with type-and-erase behavior.
+
+## [2026-05-18] - Hero Title Positioning Update
+### Completed
+- Updated the main portfolio title/subheadline to `AI Application & Full Stack Developer`.
+- Synced the same positioning across profile data, metadata, roadmap wording, and content guidance.

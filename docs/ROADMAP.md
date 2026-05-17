@@ -65,7 +65,7 @@ This roadmap outlines the phased development of the my-portfolio project.
 - [x] Successfully complete lint and production build verification.
 
 ## Phase 10: Content Integration & Portfolio Delivery
-- [x] Position branding as AI Application Developer / AI Engineer.
+- [x] Position branding as AI Application & Full Stack Developer.
 - [x] Update all section content with professional, grounded wording.
 - [x] Implement standalone, print-friendly Resume page at /resume.
 - [x] Update header logo to "AE." and simplify all-caps typography.

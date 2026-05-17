@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: "Arjay | Portfolio",
-  description: "Portfolio of Arjay Escabas, AI Application Developer / AI Engineer.",
+  description: "Portfolio of Arjay Escabas, AI Application & Full Stack Developer.",
 };
 
 export default function RootLayout({

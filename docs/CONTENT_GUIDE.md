@@ -17,7 +17,7 @@ This document provides guidelines and placeholders for all copy and content with
 - **No overclaiming:** Use grounded wording like "practical experience," "focused on," or "familiar with" instead of "expert" or "master."
 
 ## Role Positioning
-- **Primary Title:** AI Application Developer / AI Engineer
+- **Primary Title:** AI Application & Full Stack Developer
 - **Supporting Titles:** Full-Stack Automation & System Developer, AI Systems & Automation Developer
 - **Positioning:** Building AI-powered applications, automation systems, predictive workflows, intelligent bots, crawling tools, auditing systems, and data-driven products with grounded technical execution.
 - **AI-assisted development vs AI application development:** AI-assisted development is a support workflow for coding, debugging, prototyping, documentation, and iteration. AI application development is the actual product work of integrating AI into system logic, automation, output processing, prediction support, and user-facing features.
@@ -27,7 +27,7 @@ This document provides guidelines and placeholders for all copy and content with
 
 ### 1. Home / Hero
 - **Headline:** Arjay Escabas
-- **Sub-headline:** AI Application Developer / AI Engineer
+- **Sub-headline:** AI Application & Full Stack Developer
 - **Description:** Focus on AI-powered applications, automation workflows, crawling tools, auditing systems, and data-driven product logic.
 
 ### 2. About

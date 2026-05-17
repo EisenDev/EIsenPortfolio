@@ -1,10 +1,10 @@
 export const profileData = {
   name: "Arjay Escabas",
-  role: "AI Application Developer / AI Engineer",
+  role: "AI Application & Full Stack Developer",
   resumeHref: "/resume",
   hero: {
     headline: "Arjay Escabas",
-    subheadline: "AI Application Developer / AI Engineer",
+    subheadline: "AI Application & Full Stack Developer",
     description:
       "I design and build AI-powered applications, automation systems, crawling tools, auditing workflows, and data-driven products where AI is part of the actual system logic - not just a coding shortcut.",
     primaryCTA: { text: "View projects", href: "#projects" },
