@@ -19,7 +19,7 @@ export const profileData = {
   about: {
     title: "About Me",
     description:
-      "I am an AI Application Developer focused on building useful systems through full-stack development, AI integration, automation, and clean interface design. My work involves connecting data sources, integrating AI models or bots, processing outputs, and turning them into practical product features. I use AI-assisted development tools for coding, debugging, prototyping, documentation, and learning, but I do not treat AI as a replacement for engineering judgment.",
+      "I am an AI Application Developer focused on building useful systems through full-stack development, AI integration, automation, and clean interface design. I studied at University of Mindanao Digos College, where I built my foundation in IT and practical software development. My work involves connecting data sources, integrating AI models or bots, processing outputs, and turning them into practical product features. I use AI-assisted development tools for coding, debugging, prototyping, documentation, and learning, but I do not treat AI as a replacement for engineering judgment.",
     highlights: [
       {
         title: "Product-focused systems",

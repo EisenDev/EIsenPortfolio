@@ -33,7 +33,7 @@ This document provides guidelines and placeholders for all copy and content with
 ### 2. About
 - **Label:** Introduction
 - **Title:** About Me
-- **Copy:** Explain how Arjay connects data sources, AI models or bots, processing layers, and interfaces to turn ideas into practical product features.
+- **Copy:** Explain how Arjay connects data sources, AI models or bots, processing layers, and interfaces to turn ideas into practical product features. A short academic background line is acceptable when it supports early-career credibility.
 
 ### 3. Expertise
 - **Categories:**

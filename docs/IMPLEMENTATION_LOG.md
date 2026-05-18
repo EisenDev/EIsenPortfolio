@@ -138,3 +138,8 @@ This log tracks major implementation milestones and content updates for the my-p
 ### Completed
 - Updated the main portfolio title/subheadline to `AI Application & Full Stack Developer`.
 - Synced the same positioning across profile data, metadata, roadmap wording, and content guidance.
+
+## [2026-05-18] - About Education Line
+### Completed
+- Added `University of Mindanao Digos College` as a short supporting education line in the About section.
+- Kept the section focused on development and product execution instead of turning it into a full academic biography.
