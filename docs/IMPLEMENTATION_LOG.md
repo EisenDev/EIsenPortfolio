@@ -143,3 +143,14 @@ This log tracks major implementation milestones and content updates for the my-p
 ### Completed
 - Added `University of Mindanao Digos College` as a short supporting education line in the About section.
 - Kept the section focused on development and product execution instead of turning it into a full academic biography.
+
+## [2026-05-18] - Brand Logo Swap
+### Completed
+- Replaced the visible `AE.` text brand mark in the navigation and footer with the exact provided `portfolioapplogo.png` asset.
+- Kept the surrounding layout unchanged while swapping only the brand graphic.
+
+## [2026-05-18] - App Icon Correction
+### Completed
+- Restored the navigation and footer brand mark back to the `AE.` text logo.
+- Applied `portfolioapplogo.png` to the browser/app icon metadata instead of using it as the header brand mark.
+- Replaced the actual file-based app icons in `src/app/` (`favicon.ico`, `icon.png`, `apple-icon.png`) so browsers stop falling back to the generic Next.js tab icon.

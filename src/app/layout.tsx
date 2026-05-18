@@ -7,6 +7,11 @@ import { Footer } from "@/components/layout/footer";
 export const metadata: Metadata = {
   title: "Arjay | Portfolio",
   description: "Portfolio of Arjay Escabas, AI Application & Full Stack Developer.",
+  icons: {
+    icon: "/portfolioapplogo.png",
+    shortcut: "/portfolioapplogo.png",
+    apple: "/portfolioapplogo.png",
+  },
 };
 
 export default function RootLayout({
