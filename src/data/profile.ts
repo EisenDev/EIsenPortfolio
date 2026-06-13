@@ -254,6 +254,7 @@ export const profileData = {
           "AI-ready architecture with scalable workflow planning",
         ],
         repositoryUrl: "https://github.com/EisenDev/atelier",
+        websiteUrl: "https://atelier-staging.zeraynce.com/",
       },
       {
         title: "Kairos",
