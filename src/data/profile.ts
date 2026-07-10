@@ -224,6 +224,7 @@ export const profileData = {
           "PostgreSQL, MySQL, SQLite, Excel, and clean SQL export workflows",
         ],
         repositoryUrl: "https://github.com/EisenDev/SQAuto",
+        websiteUrl: "http://sqauto.zeraynce.com/",
       },
       {
         title: "LumeCore",
