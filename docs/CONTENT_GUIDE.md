@@ -52,9 +52,9 @@ This document provides guidelines and placeholders for all copy and content with
 
 ### 6. Selected Work
 - **Format:**
+  - CipherLens: AI security / Defensive auditing platform
+  - Atelier: Creative platform / Service operating system
   - SQAuto: Data migration / AI-assisted validation platform
-  - LumeCore: AI forensics / Security auditing system
-  - Atelier: Creative platform / AI-ready web system
   - Kairos: AI prediction / Market intelligence
 - **Project-content rules:**
   - Use real README-level project summaries when available.

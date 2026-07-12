@@ -18,7 +18,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-32 md:py-48 relative overflow-hidden bg-[#F6F3ED] text-[#111111]">
+    <section id="contact" className="py-32 md:py-48 relative overflow-hidden bg-[#111111] dark:bg-[#F6F3ED] text-[#F6F3ED] dark:text-[#111111] transition-colors duration-300">
       <Container className="relative z-10">
         <MotionWrapper>
           <div className="flex flex-col items-center text-center">
@@ -30,7 +30,7 @@ export function ContactSection() {
               {contact.title}
             </h2>
             
-            <p className="text-lg md:text-xl text-[#6F6A62] mb-12 max-w-2xl leading-relaxed font-medium text-balance">
+            <p className="text-lg md:text-xl text-[#B8B1A5] dark:text-[#6F6A62] mb-12 max-w-2xl leading-relaxed font-medium text-balance">
               {contact.description}
             </p>
 
@@ -43,9 +43,11 @@ export function ContactSection() {
                   rel="noopener noreferrer"
                   className={cn(
                     "flex items-center gap-3 h-14 px-8 rounded-full transition-all font-bold",
-                    social.name === "GitHub" ? "bg-[#111111] text-[#F6F3ED] hover:scale-105" :
-                    social.name === "Resume" ? "bg-[#A68A64] text-white hover:scale-105" :
-                    "border-2 border-[#111111]/10 text-[#111111] hover:bg-[#111111]/5"
+                    social.name === "GitHub"
+                      ? "bg-[#F6F3ED] dark:bg-[#111111] text-[#111111] dark:text-[#F6F3ED] hover:scale-105"
+                      : social.name === "Resume"
+                      ? "bg-[#A68A64] text-white hover:scale-105"
+                      : "border-2 border-[#F6F3ED]/20 dark:border-[#111111]/10 text-[#F6F3ED] dark:text-[#111111] hover:bg-[#F6F3ED]/10 dark:hover:bg-[#111111]/5"
                   )}
                 >
                   {getSocialIcon(social.name)}
@@ -56,8 +58,8 @@ export function ContactSection() {
             </div>
           </div>
           
-          <div className="mt-32 text-center border-t border-[#111111]/5 pt-12">
-             <p className="text-[11px] font-medium tracking-[0.16em] text-[#111111]/35">
+          <div className="mt-32 text-center border-t border-[#F6F3ED]/10 dark:border-[#111111]/5 pt-12">
+             <p className="text-[11px] font-medium tracking-[0.16em] text-[#F6F3ED]/35 dark:text-[#111111]/35">
                 &copy; 2026 {profileData.name} | AI Application Developer Portfolio
              </p>
           </div>

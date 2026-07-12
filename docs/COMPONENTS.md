@@ -50,7 +50,7 @@ This document plans the reusable UI components for the my-portfolio project.
 
 ### 9. HeroSection
 - **Purpose:** Main introduction and call-to-action area.
-- **Features:** Responsive button stacking, stats cards grid.
+- **Features:** Theme-aware background and typography, dynamic background portrait blending using theme-aware gradient shadows (`from-background`), and optimized grayscale opacity for light (Champagne) and dark (Obsidian) modes.
 
 ### 10. AboutSection
 - **Purpose:** Personal context and highlight cards.

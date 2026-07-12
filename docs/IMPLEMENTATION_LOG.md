@@ -154,3 +154,26 @@ This log tracks major implementation milestones and content updates for the my-p
 - Restored the navigation and footer brand mark back to the `AE.` text logo.
 - Applied `portfolioapplogo.png` to the browser/app icon metadata instead of using it as the header brand mark.
 - Replaced the actual file-based app icons in `src/app/` (`favicon.ico`, `icon.png`, `apple-icon.png`) so browsers stop falling back to the generic Next.js tab icon.
+
+## [2026-07-12] - Hero Section Light Mode Support
+### Completed
+- Migrated Hero section styling from a hardcoded dark background (`bg-[#0a0a0a]`) to a theme-aware background (`bg-background`).
+- Replaced hardcoded black portrait shadows in `HeroSection` with theme-aware gradient shadows using `from-background` and `via-background`.
+- Fixed theme-toggle split-screen visual mismatch by removing `transition-colors duration-500` from the Hero section background and heading, ensuring the background, heading, and gradient overlays transition instantly together.
+- Adjusted light mode grayscale opacity and contrast values for the background portrait (`opacity-[0.35]`, `contrast-115`) to perfectly match the user's reference design.
+
+### Verification
+- `npm run lint` - passed.
+- `npm run build` - passed.
+
+## [2026-07-12] - Project Highlights and Contact Theme Inversion
+### Completed
+- **Project Swaps & Reordering:** Reordered projects to primary focus order: 1. CipherLens, 2. Atelier, 3. SQAuto, 4. Kairos. Replaced the former "LumeCore" case study entry with comprehensive "CipherLens" platform details.
+- **Real screenshots Integration:** Integrated actual interface screenshots into the projects section (`public/projects/cipherlens.png`, `public/projects/atelier.png`, `public/projects/sqauto.png`). Updated card components to conditionally display these screenshots with a smooth zoom transition effect on hover, falling back gracefully to the original accent-gradient thumbnail for Kairos.
+- **Atelier Content Audit:** Updated the "Atelier" project card metadata and tech stack using direct details from its codebase (removed Supabase/PayMongo, added Docker+Traefik, PostgreSQL, and Nodemailer) to accurately represent the shipped product.
+- **Inverted Contact Section:** Redesigned the "Get in Touch" section to dynamically invert colors relative to the theme: renders a premium dark-obsidian background (`#111111`) in light-mode, and switches smoothly to a warm light-champagne background (`#F6F3ED`) in dark-mode, matching the user's reference design structure.
+
+### Verification
+- `npm run lint` - passed.
+- `npm run build` - passed.
+

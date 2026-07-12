@@ -211,6 +211,40 @@ export const profileData = {
       "Selected work focused on migration safety, AI-assisted auditing, and modular system workflows.",
     items: [
       {
+        title: "CipherLens",
+        category: "AI security / Defensive auditing platform",
+        description:
+          "Enterprise-grade, AI-powered defensive security auditing platform for automated assessments of websites and source code repositories, delivering structured findings, risk prioritization, and Gemini-assisted remediation guidance.",
+        tech: ["React", "TypeScript", "NestJS", "Python", "FastAPI", "PostgreSQL", "Supabase", "Redis", "BullMQ", "Docker"],
+        status: "Active case study",
+        highlights: [
+          "Website SSL/TLS, security headers, and exposed endpoint auditing",
+          "Git repository secret scanning, dependency vulnerability checks, and hygiene analysis",
+          "Gemini-powered AI report generation with risk scoring and remediation suggestions",
+          "Containerized microservice architecture deployed on Azure VM with Cloudflare SSL",
+        ],
+        repositoryUrl: "https://github.com/EisenDev/cipherlens",
+        websiteUrl: "https://cipherlens.zeraynce.com",
+        imageUrl: "/projects/cipherlens.png",
+      },
+      {
+        title: "Atelier",
+        category: "Creative platform / Service operating system",
+        description:
+          "Premium creative directory and professional service OS for the Philippine market. A Next.js monolith combining public creative discovery, nickname-based profiles, client and creative workspaces, booking workflows, media delivery, invoices, and notifications under one codebase.",
+        tech: ["Next.js 15", "React 19", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "Cloudflare R2", "Nodemailer", "Docker", "Traefik"],
+        status: "Active case study",
+        highlights: [
+          "Searchable public creative directory with nickname-based profile routing at /${nickname}",
+          "Full booking lifecycle — inquiry, confirmation, contact handoff, invoice, and PDF export",
+          "Cloudflare R2 private media workspace with upload and folder management for creatives",
+          "Docker + Traefik staging infrastructure with automated GitHub Actions GHCR deploys",
+        ],
+        repositoryUrl: "https://github.com/EisenDev/atelier",
+        websiteUrl: "https://atelier-staging.zeraynce.com/",
+        imageUrl: "/projects/atelier.png",
+      },
+      {
         title: "SQAuto",
         category: "Data migration / AI-assisted validation platform",
         description:
@@ -225,37 +259,7 @@ export const profileData = {
         ],
         repositoryUrl: "https://github.com/EisenDev/SQAuto",
         websiteUrl: "http://sqauto.zeraynce.com/",
-      },
-      {
-        title: "LumeCore",
-        category: "AI forensics / Security auditing system",
-        description:
-          "AI-powered forensic and security ecosystem for auditing codebases, infrastructure, digital assets, and transfer readiness through a modular architecture built for complex review workflows.",
-        tech: ["Laravel", "Vue", "Gemini", "PostgreSQL", "pgvector", "Puppeteer", "Filament", "Meilisearch"],
-        status: "Active case study",
-        highlights: [
-          "Repository, infrastructure, DNS, SSL, and security header auditing",
-          "Gemini-powered config analysis, audit summaries, and insight workflows",
-          "Browser-based forensic checks using Puppeteer and Browsershot",
-          "CloudVault asset management with pgvector-based search direction",
-        ],
-        repositoryUrl: "https://github.com/EisenDev/LumeCore",
-      },
-      {
-        title: "Atelier",
-        category: "Creative platform / AI-ready web system",
-        description:
-          "Premium creative directory and operating system for creatives, built around image-forward discovery, public profiles, booking workflows, private pricing, Vault assets, payments, and future AI-assisted workflows.",
-        tech: ["Next.js", "TypeScript", "Supabase", "Prisma", "Cloudflare R2", "PayMongo", "AI-ready"],
-        status: "Active case study",
-        highlights: [
-          "Public creative discovery and nickname-based profile routing",
-          "Booking lifecycle with deposit and delivery workflow direction",
-          "Cloudflare R2 Vault for project assets and deliverables",
-          "AI-ready architecture with scalable workflow planning",
-        ],
-        repositoryUrl: "https://github.com/EisenDev/atelier",
-        websiteUrl: "https://atelier-staging.zeraynce.com/",
+        imageUrl: "/projects/sqauto.png",
       },
       {
         title: "Kairos",

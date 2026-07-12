@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { SectionHeader } from "@/components/ui/section-header";
@@ -29,16 +30,32 @@ export function ProjectsSection() {
             <li key={index}>
               <MotionWrapper delay={index * 0.1}>
                 <Card variant="elevated" className="h-full flex flex-col group overflow-hidden border-border/40 hover:border-accent/40 transition-all duration-500 rounded-xl">
-                  {/* CSS Placeholder Thumbnail */}
+                  {/* Project Thumbnail */}
                   <div className="relative aspect-[16/9] overflow-hidden bg-surface-elevated flex items-center justify-center">
-                     <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
-                        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--accent)_0%,_transparent_70%)] blur-3xl transform -translate-y-1/2" />
-                     </div>
-                     <div className="relative z-10 flex flex-col items-center gap-4">
-                        <div className="w-16 h-1 bg-accent/40 rounded-full group-hover:w-24 transition-all duration-700" />
-                        <span className="text-[10px] font-semibold tracking-[0.16em] text-muted">Project {index + 1}</span>
-                        <div className="w-16 h-1 bg-accent/40 rounded-full group-hover:w-12 transition-all duration-700" />
-                     </div>
+                    {project.imageUrl ? (
+                      <>
+                        <Image
+                          src={project.imageUrl}
+                          alt={`${project.title} project screenshot`}
+                          fill
+                          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                        {/* Subtle dark overlay on hover for polish */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 z-10" />
+                      </>
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--accent)_0%,_transparent_70%)] blur-3xl transform -translate-y-1/2" />
+                        </div>
+                        <div className="relative z-10 flex flex-col items-center gap-4">
+                          <div className="w-16 h-1 bg-accent/40 rounded-full group-hover:w-24 transition-all duration-700" />
+                          <span className="text-[10px] font-semibold tracking-[0.16em] text-muted">Project {index + 1}</span>
+                          <div className="w-16 h-1 bg-accent/40 rounded-full group-hover:w-12 transition-all duration-700" />
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   <CardHeader className="p-8 md:p-12">
