@@ -177,3 +177,14 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed.
 - `npm run build` - passed.
 
+## [2026-07-12] - Resume Update: LumeCore to CipherLens
+### Completed
+- **Project Swap on Resume:** Replaced "LumeCore" with "CipherLens" inside `scripts/generate-resume-pdf.mjs`.
+- **Content Alignment:** Synced the CipherLens description, tech stack, and highlights with `src/data/profile.ts` to ensure consistency.
+- **PDF Regeneration:** Re-generated `public/Arjay-Escabas-Resume.pdf` with the updated content.
+
+### Verification
+- `npm run lint` - passed.
+- `npm run build` - passed.
+
+

@@ -79,4 +79,5 @@ This roadmap outlines the phased development of the my-portfolio project.
 - [x] Strengthen selected work content for SQAuto, LumeCore, Atelier, and Kairos.
 - [x] Strengthen resume content with real project details.
 - [x] Keep Kairos clearly marked as experimental and not financial advice.
+- [x] Update resume content: replace LumeCore with CipherLens.
 - [x] Verification completed.

@@ -205,12 +205,12 @@ const resume = {
       ],
     },
     {
-      title: "LumeCore — AI-Powered Forensic & Security Ecosystem",
-      stack: "Laravel, Vue, Inertia, Filament, PostgreSQL, pgvector, Gemini, Puppeteer, Meilisearch",
+      title: "CipherLens — AI-Powered Defensive Security Auditing Platform",
+      stack: "React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Docker",
       bullets: [
-        "AI-powered auditing system for codebase, infrastructure, asset health, and transfer-readiness workflows.",
-        "Includes repository analysis, browser forensics, DNS/SSL/security checks, Gemini-assisted config review, and audit reporting.",
-        "Designed with CloudVault asset handling, pgvector-based search direction, and secure project review workflows.",
+        "Enterprise-grade, AI-powered defensive security platform for automated auditing of websites and git repositories.",
+        "Performs website security audits, SSL/TLS checks, secret scanning, and dependency vulnerability analysis.",
+        "Integrates Gemini AI to generate structured findings, risk prioritization, and detailed remediation guidance.",
       ],
     },
   ],
@@ -317,4 +317,5 @@ output += `trailer\n<< /Size ${pdfObjects.length} /Root 1 0 R >>\nstartxref\n${x
 
 const outputPath = path.join(process.cwd(), "public", "Arjay-Escabas-Resume.pdf");
 fs.writeFileSync(outputPath, output, "binary");
-console.log(`Wrote ${outputPath}`);
+console.log(`Wrote ${outputPath}. Final y: ${y}`);
+
