@@ -86,7 +86,7 @@ export const profileData = {
     items: [
       {
         role: "AI Application Developer / Automation Builder",
-        company: "",
+        company: "Freelancer",
         period: "2024 – 2026",
         description:
           "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
@@ -98,7 +98,7 @@ export const profileData = {
       },
       {
         role: "Full-Stack Automation & System Developer",
-        company: "",
+        company: "Infosoft (Mini Clean Business Solutions)",
         period: "2024 – 2026",
         description:
           "Developed full-stack systems involving database workflows, backend APIs, frontend dashboards, and automated processing pipelines.",

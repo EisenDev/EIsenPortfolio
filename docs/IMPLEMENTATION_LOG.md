@@ -187,4 +187,16 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed.
 - `npm run build` - passed.
 
+## [2026-08-26] - Resume and Experience Company Update
+### Completed
+- **Resume Experience Companies:** Added `Freelancer` to the *AI Application Developer / Automation Builder* role and `Infosoft (Mini Clean Business Solutions)` to the *Full-Stack Automation & System Developer* role in `scripts/generate-resume-pdf.mjs`.
+- **PDF Layout Update:** Rendered the company line in accent styling below the role titles in the generated PDF while maintaining single-page dimensions.
+- **Profile Data Sync:** Updated `src/data/profile.ts` with the matching company names so the web Experience section reflects the same company attribution.
+- **PDF Regeneration:** Re-generated `public/Arjay-Escabas-Resume.pdf`.
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
+
 

@@ -160,7 +160,7 @@ function paragraph(x, y, value, options = {}) {
   return cursor;
 }
 
-function centeredText(y, value, size, color = colors.ink, font = "F2", tweak = 0.24) {
+function centeredText(y, value, size, color = colors.ink, font = "F2") {
   const x = page.width / 2 - estimateTextWidth(value, size) / 2;
   text(x, y, value, size, color, font);
 }
@@ -217,6 +217,7 @@ const resume = {
   experience: [
     {
       title: "AI Application Developer / Automation Builder",
+      company: "Freelancer",
       period: "2024 – 2026",
       bullets: [
         "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
@@ -226,6 +227,7 @@ const resume = {
     },
     {
       title: "Full-Stack Automation & System Developer",
+      company: "Infosoft (Mini Clean Business Solutions)",
       period: "2024 – 2026",
       bullets: [
         "Developed full-stack systems involving database workflows, backend APIs, frontend dashboards, and automated processing pipelines.",
@@ -281,6 +283,10 @@ for (const item of resume.experience) {
   text(page.margin, y, item.title, 10.5, colors.ink, "F2");
   text(470, y, item.period, 9.2, colors.muted, "F1");
   y -= 13;
+  if (item.company) {
+    text(page.margin, y, item.company, 9.1, colors.accent, "F1");
+    y -= 12;
+  }
   for (const bullet of item.bullets) {
     y = paragraph(page.margin, y, bullet, { size: 9.2, lineHeight: 12, maxChars: 109, bullet: true });
   }
