@@ -198,5 +198,15 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-08-26] - Atelier Project Details & Asset Update
+### Completed
+- **Image Asset Swap:** Replaced `public/projects/atelier.png` with the new screenshot asset.
+- **Website URL Update:** Updated Atelier live website URL to `https://atelier.novaryn.tech/`.
+- **Content & Tech Stack Alignment:** Updated Atelier description, tech stack chips (Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik), and comprehensive feature highlights in `src/data/profile.ts`.
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
 
 
