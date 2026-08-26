@@ -208,5 +208,16 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-08-26] - Resume 3-Project Expansion & About Me Full-Stack Update
+### Completed
+- **Resume Projects Expansion:** Added `Atelier` to the Resume PDF featured projects list with the sequence: `Atelier`, `SQAuto`, `CipherLens`.
+- **Resume Single-Page Typography:** Refined typography scale and section padding in `scripts/generate-resume-pdf.mjs` to keep the 3 featured projects, 2 experience entries, skills, education, and summary on a single clean page.
+- **About Me Section Update:** Updated `About Me` narrative in `src/data/profile.ts` to proudly emphasize full-stack web engineering, Docker containerization, backend APIs, and product craft. Added a 4th highlight card (*"Full-Stack Web & Docker"*) completing a balanced 2x2 grid.
+- **PDF Regeneration:** Re-generated `public/Arjay-Escabas-Resume.pdf`.
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
 
 

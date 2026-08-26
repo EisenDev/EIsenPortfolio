@@ -19,7 +19,7 @@ export const profileData = {
   about: {
     title: "About Me",
     description:
-      "I am an AI Application Developer focused on building useful systems through full-stack development, AI integration, automation, and clean interface design. I studied at University of Mindanao Digos College, where I built my foundation in IT and practical software development. My work involves connecting data sources, integrating AI models or bots, processing outputs, and turning them into practical product features. I use AI-assisted development tools for coding, debugging, prototyping, documentation, and learning, but I do not treat AI as a replacement for engineering judgment.",
+      "I am a passionate Full-Stack Web Developer and AI Application Builder focused on building and shipping robust, end-to-end digital products. I studied at University of Mindanao Digos College, where I built a strong foundation in IT and practical software engineering. My work spans full-stack architecture—crafting responsive frontends, building reliable backend APIs, database processing, containerized environments with Docker, and integrating AI workflows and automation into clean, production-ready systems.",
     highlights: [
       {
         title: "Product-focused systems",
@@ -35,6 +35,11 @@ export const profileData = {
         title: "Practical execution",
         description:
           "I stay responsible for system design, code quality, debugging, integrations, and product functionality.",
+      },
+      {
+        title: "Full-Stack Web & Docker",
+        description:
+          "I take pride in end-to-end web engineering—building solid frontends, resilient APIs, database workflows, and containerized deployments with Docker.",
       },
     ],
   },

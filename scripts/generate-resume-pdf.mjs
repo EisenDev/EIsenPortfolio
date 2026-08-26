@@ -196,21 +196,27 @@ const resume = {
   ],
   projects: [
     {
+      title: "Atelier — Philippine Creative Directory & Professional Service OS",
+      stack: "Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik",
+      bullets: [
+        "Modular monolith uniting talent discovery, canonical nickname profiles (/[nickname]), booking workflows, and PDF invoicing.",
+        "Engineered booking lifecycle with deposit tracking, tokenized handoffs, private Cloudflare R2 vaults, and Docker/Traefik deployment.",
+      ],
+    },
+    {
       title: "SQAuto — Industrial SQL Dump Data Migration Platform",
       stack: "Next.js, FastAPI, PostgreSQL, Polars, Redis, Gemini, SQLGlot",
       bullets: [
-        "Built around a safe migration pipeline for restoring, profiling, cleaning, repairing, validating, and exporting legacy SQL dump data.",
-        "Uses a read-only source principle, staging sandbox processing, deterministic validation, and AI-assisted guidance for schema explanations and anomaly detection.",
-        "Supports schema comparison, relationship repair, validation reports, and export workflows for PostgreSQL, MySQL, SQLite, Excel, and clean SQL.",
+        "Built safe migration pipeline for restoring, profiling, cleaning, repairing, validating, and exporting legacy SQL dump data.",
+        "Uses read-only source principle, sandbox staging, deterministic validation, AI anomaly detection, and multi-DB exports.",
       ],
     },
     {
       title: "CipherLens — AI-Powered Defensive Security Auditing Platform",
       stack: "React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Docker",
       bullets: [
-        "Enterprise-grade, AI-powered defensive security platform for automated auditing of websites and git repositories.",
-        "Performs website security audits, SSL/TLS checks, secret scanning, and dependency vulnerability analysis.",
-        "Integrates Gemini AI to generate structured findings, risk prioritization, and detailed remediation guidance.",
+        "Enterprise-grade defensive security platform for automated auditing of websites and git repositories (SSL/TLS, secrets, CVEs).",
+        "Integrates Gemini AI to generate structured findings, risk prioritization scoring, and actionable remediation guidance.",
       ],
     },
   ],
@@ -238,59 +244,59 @@ const resume = {
   ],
 };
 
-let y = page.height - 58;
+let y = page.height - 48;
 
-centeredText(y, resume.name, 22, colors.ink, "F2");
-y -= 20;
-centeredContactLine(y, resume.contactItems, 8.2);
+centeredText(y, resume.name, 21, colors.ink, "F2");
 y -= 18;
+centeredContactLine(y, resume.contactItems, 8.2);
+y -= 15;
 line(page.margin, y, page.width - page.margin, y, 1.15, colors.ink);
-y -= 20;
+y -= 17;
 
 y = sectionTitle(page.margin, y, "PROFESSIONAL SUMMARY");
-y = paragraph(page.margin, y, resume.summary, { size: 10, lineHeight: 14, maxChars: 112 });
-y -= 8;
+y = paragraph(page.margin, y, resume.summary, { size: 9.6, lineHeight: 13.2, maxChars: 112 });
+y -= 7;
 
 y = sectionTitle(page.margin, y, "EDUCATION");
-text(page.margin, y, resume.education.school, 10.8, colors.ink, "F2");
-y -= 14;
-text(page.margin, y, resume.education.degree, 9.6, colors.text, "F1");
-y -= 20;
+text(page.margin, y, resume.education.school, 10.5, colors.ink, "F2");
+y -= 13;
+text(page.margin, y, resume.education.degree, 9.2, colors.text, "F1");
+y -= 16;
 
 y = sectionTitle(page.margin, y, "TECHNICAL SKILLS");
 for (const [label, value] of resume.skills) {
-  text(page.margin, y, `${label}:`, 9.5, colors.ink, "F2");
-  y = paragraph(page.margin + 112, y, value, { size: 9.2, lineHeight: 11.8, maxChars: 86 });
+  text(page.margin, y, `${label}:`, 9.2, colors.ink, "F2");
+  y = paragraph(page.margin + 110, y, value, { size: 9.0, lineHeight: 11.6, maxChars: 88 });
   y -= 1;
 }
 
-y -= 6;
+y -= 5;
 y = sectionTitle(page.margin, y, "FEATURED PROJECTS");
 for (const project of resume.projects) {
-  text(page.margin, y, project.title, 10.5, colors.ink, "F2");
-  y -= 13;
-  text(page.margin, y, project.stack, 9.1, colors.accent, "F1");
+  text(page.margin, y, project.title, 10.0, colors.ink, "F2");
   y -= 12;
+  text(page.margin, y, project.stack, 8.8, colors.accent, "F1");
+  y -= 11;
   for (const bullet of project.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 9.2, lineHeight: 12, maxChars: 109, bullet: true });
+    y = paragraph(page.margin, y, bullet, { size: 9.0, lineHeight: 11.6, maxChars: 110, bullet: true });
   }
-  y -= 4;
+  y -= 3.5;
 }
 
 y -= 2;
 y = sectionTitle(page.margin, y, "RELEVANT EXPERIENCE");
 for (const item of resume.experience) {
-  text(page.margin, y, item.title, 10.5, colors.ink, "F2");
-  text(470, y, item.period, 9.2, colors.muted, "F1");
-  y -= 13;
+  text(page.margin, y, item.title, 10.0, colors.ink, "F2");
+  text(475, y, item.period, 9.0, colors.muted, "F1");
+  y -= 12;
   if (item.company) {
-    text(page.margin, y, item.company, 9.1, colors.accent, "F1");
-    y -= 12;
+    text(page.margin, y, item.company, 8.8, colors.accent, "F1");
+    y -= 11;
   }
   for (const bullet of item.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 9.2, lineHeight: 12, maxChars: 109, bullet: true });
+    y = paragraph(page.margin, y, bullet, { size: 9.0, lineHeight: 11.6, maxChars: 110, bullet: true });
   }
-  y -= 4;
+  y -= 3.5;
 }
 
 const stream = content.join("\n");
