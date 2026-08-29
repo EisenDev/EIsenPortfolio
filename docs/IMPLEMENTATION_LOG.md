@@ -219,5 +219,16 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-08-29] - Resume Repositioning: Web Development, Automation & AI
+### Completed
+- **Summary Repositioning:** Re-anchored the resume summary around *Full-Stack Web Development* as the core discipline, *Automation* as the workflow engine, and *AI Engineering* as the intelligence layer.
+- **Skills Categorization:** Re-ordered technical skill categories to prioritize Web Development (Languages, Frontend, Backend & APIs, Databases & ORM), followed by Automation & Tools, AI Engineering, and DevOps & Cloud.
+- **Experience & Projects Alignment:** Refined experience roles (*Full-Stack Web & Automation Developer* and *AI & Full-Stack Application Developer*) and project narratives to highlight this 3-tier engineering focus.
+- **PDF Regeneration:** Re-generated `public/Arjay-Escabas-Resume.pdf` with balanced single-page margins (Final y: 55.9).
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
 
 

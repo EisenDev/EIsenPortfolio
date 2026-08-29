@@ -15,7 +15,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<< /Length 9416 >>
+<< /Length 9775 >>
 stream
 BT /F2 21 Tf 0.09 0.13 0.20 rg 1 0 0 1 234.71 794.00 Tm (ARJAY ESCABAS) Tj ET
 0.33 0.38 0.45 RG 0.9 w 81.62 776.00 m 83.62 780.00 l S
@@ -37,83 +37,85 @@ BT /F1 8.2 Tf 0.72 0.61 0.37 rg 1 0 0 1 390.31 776.00 Tm (|) Tj ET
 0.33 0.38 0.45 RG 0.8 w 411.58 775.00 4.50 4.00 re S
 BT /F1 8.2 Tf 0.33 0.38 0.45 rg 1 0 0 1 420.08 776.00 Tm (linkedin.com/in/arjay-esc) Tj ET
 0.09 0.13 0.20 RG 1.15 w 34.00 761.00 m 561.00 761.00 l S
-BT /F2 11.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 744.00 Tm (PROFESSIONAL SUMMARY) Tj ET
-0.72 0.61 0.37 RG 1.2 w 34.00 736.00 m 561.00 736.00 l S
-BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 722.00 Tm (AI Application Developer / AI Engineer focused on building AI-powered automation systems, data migration) Tj ET
-BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 708.80 Tm (platforms, crawling and auditing tools, predictive workflows, and data-driven applications. Experienced in) Tj ET
-BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 695.60 Tm (full-stack development, backend systems, AI-assisted workflows, database processing, and practical product) Tj ET
-BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 682.40 Tm (implementation.) Tj ET
-BT /F2 11.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 662.20 Tm (EDUCATION) Tj ET
-0.72 0.61 0.37 RG 1.2 w 34.00 654.20 m 561.00 654.20 l S
-BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 640.20 Tm (University of Mindanao Digos College) Tj ET
-BT /F1 9.2 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 627.20 Tm (Bachelor of Science in Information Technology) Tj ET
-BT /F2 11.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 611.20 Tm (TECHNICAL SKILLS) Tj ET
-0.72 0.61 0.37 RG 1.2 w 34.00 603.20 m 561.00 603.20 l S
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 589.20 Tm (Languages:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 589.20 Tm (TypeScript, JavaScript, Python, SQL, HTML/CSS) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 576.60 Tm (Frontend:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 576.60 Tm (React, Next.js, Vue 3, Tailwind CSS, Inertia.js) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 564.00 Tm (Backend & APIs:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 564.00 Tm (Laravel, FastAPI, Node.js, Hono, REST APIs, WebSockets, Webhooks) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 551.40 Tm (AI & Automation:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 551.40 Tm (AI agents, LLM integration, web scraping, Puppeteer, Browsershot) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 538.80 Tm (Databases:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 538.80 Tm (PostgreSQL, MySQL, SQLite, Supabase, SQLAlchemy, SQLGlot, Polars, pandas, Redis) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 526.20 Tm (Testing & Debugging:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 526.20 Tm (Postman, anomaly review, structured verification) Tj ET
-BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 513.60 Tm (Cloud:) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 513.60 Tm (Azure, Docker, Nginx, Git, GitHub Actions, Cloudflare, DigitalOcean) Tj ET
-BT /F2 11.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 496.00 Tm (FEATURED PROJECTS) Tj ET
-0.72 0.61 0.37 RG 1.2 w 34.00 488.00 m 561.00 488.00 l S
-BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 474.00 Tm (Atelier  Philippine Creative Directory & Professional Service OS) Tj ET
-BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 462.00 Tm (Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 451.00 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 451.00 Tm (Modular monolith uniting talent discovery, canonical nickname profiles \(/[nickname]\), booking workflows, and) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 439.40 Tm (PDF invoicing.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 427.80 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 427.80 Tm (Engineered booking lifecycle with deposit tracking, tokenized handoffs, private Cloudflare R2 vaults, and) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 416.20 Tm (Docker/Traefik deployment.) Tj ET
-BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 401.10 Tm (SQAuto  Industrial SQL Dump Data Migration Platform) Tj ET
-BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 389.10 Tm (Next.js, FastAPI, PostgreSQL, Polars, Redis, Gemini, SQLGlot) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 378.10 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 378.10 Tm (Built safe migration pipeline for restoring, profiling, cleaning, repairing, validating, and exporting legacy) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 366.50 Tm (SQL dump data.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 354.90 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 354.90 Tm (Uses read-only source principle, sandbox staging, deterministic validation, AI anomaly detection, and multi-DB) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 343.30 Tm (exports.) Tj ET
-BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 328.20 Tm (CipherLens  AI-Powered Defensive Security Auditing Platform) Tj ET
-BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 316.20 Tm (React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Docker) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 305.20 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 305.20 Tm (Enterprise-grade defensive security platform for automated auditing of websites and git repositories \(SSL/TLS,) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 293.60 Tm (secrets, CVEs\).) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 282.00 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 282.00 Tm (Integrates Gemini AI to generate structured findings, risk prioritization scoring, and actionable remediation) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 270.40 Tm (guidance.) Tj ET
-BT /F2 11.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 253.30 Tm (RELEVANT EXPERIENCE) Tj ET
-0.72 0.61 0.37 RG 1.2 w 34.00 245.30 m 561.00 245.30 l S
-BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 231.30 Tm (AI Application Developer / Automation Builder) Tj ET
-BT /F1 9 Tf 0.33 0.38 0.45 rg 1 0 0 1 475.00 231.30 Tm (2024  2026) Tj ET
-BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 219.30 Tm (Freelancer) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 208.30 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 208.30 Tm (Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 196.70 Tm (data tools.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 185.10 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 185.10 Tm (Designed workflows where AI supports automation, prediction, analysis, validation, or decision support.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 173.50 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 173.50 Tm (Used AI-assisted development tools while maintaining responsibility for system design, debugging, code) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 161.90 Tm (quality, and product functionality.) Tj ET
-BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 146.80 Tm (Full-Stack Automation & System Developer) Tj ET
-BT /F1 9 Tf 0.33 0.38 0.45 rg 1 0 0 1 475.00 146.80 Tm (2024  2026) Tj ET
-BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 134.80 Tm (Infosoft \(Mini Clean Business Solutions\)) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 123.80 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 123.80 Tm (Developed full-stack systems involving database workflows, backend APIs, frontend dashboards, and automated) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 112.20 Tm (processing pipelines.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 100.60 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 100.60 Tm (Worked with SQL migration, browser automation, data extraction, validation, cloud storage, and deployment) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 89.00 Tm (workflows.) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 77.40 Tm (") Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 77.40 Tm (Used documentation-first planning and modular architecture to support safer implementation and) Tj ET
-BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 65.80 Tm (maintainability.) Tj ET
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 744.00 Tm (PROFESSIONAL SUMMARY) Tj ET
+0.72 0.61 0.37 RG 1.1 w 34.00 738.00 m 561.00 738.00 l S
+BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 728.00 Tm (Full-Stack Web Developer & Automation Builder with AI engineering experience. Proven expertise in building) Tj ET
+BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 714.80 Tm (modern web applications, modular full-stack architectures, and responsive interfaces with Next.js, React,) Tj ET
+BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 701.60 Tm (Node.js, Laravel, FastAPI, and PostgreSQL. Experienced in automated data pipelines, web scraping, and browser) Tj ET
+BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 688.40 Tm (workflows, alongside integrating AI agents and LLMs into practical product logic. Dedicated to Docker) Tj ET
+BT /F1 9.6 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 675.20 Tm (containerization and clean software execution.) Tj ET
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 655.00 Tm (EDUCATION) Tj ET
+0.72 0.61 0.37 RG 1.1 w 34.00 649.00 m 561.00 649.00 l S
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 639.00 Tm (University of Mindanao Digos College) Tj ET
+BT /F1 9.2 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 626.00 Tm (Bachelor of Science in Information Technology) Tj ET
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 610.00 Tm (TECHNICAL SKILLS) Tj ET
+0.72 0.61 0.37 RG 1.1 w 34.00 604.00 m 561.00 604.00 l S
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 594.00 Tm (Languages:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 594.00 Tm (TypeScript, JavaScript, Python, SQL, HTML/CSS) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 581.40 Tm (Frontend:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 581.40 Tm (React, Next.js, Vue 3, Tailwind CSS, Inertia.js) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 568.80 Tm (Backend & APIs:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 568.80 Tm (Laravel, Node.js, FastAPI, Hono, REST APIs, WebSockets, Webhooks) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 556.20 Tm (Databases & ORM:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 556.20 Tm (PostgreSQL, MySQL, SQLite, Supabase, Prisma, Redis, SQLAlchemy) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 543.60 Tm (Automation & Tools:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 543.60 Tm (Web scraping, Puppeteer, Browsershot, workflow automation, Polars) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 531.00 Tm (AI Engineering:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 531.00 Tm (Gemini API, LLM integration, AI agents, prompt engineering, structured review) Tj ET
+BT /F2 9.2 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 518.40 Tm (DevOps & Cloud:) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 144.00 518.40 Tm (Docker, Azure, Git, GitHub Actions, Nginx, Cloudflare R2, DigitalOcean) Tj ET
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 500.80 Tm (FEATURED PROJECTS) Tj ET
+0.72 0.61 0.37 RG 1.1 w 34.00 494.80 m 561.00 494.80 l S
+BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 484.80 Tm (Atelier  Philippine Creative Directory & Professional Service OS) Tj ET
+BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 472.80 Tm (Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 461.80 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 461.80 Tm (Engineered full-stack modular monolith featuring public creative discovery, canonical nickname routing) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 450.20 Tm (\(/[nickname]\), and PDF invoicing.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 438.60 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 438.60 Tm (Implemented end-to-end booking workflows with deposit tracking, tokenized handoffs, Cloudflare R2 vaults, and) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 427.00 Tm (Docker/Traefik deployment.) Tj ET
+BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 411.90 Tm (SQAuto  Industrial SQL Dump Data Migration & Automation Platform) Tj ET
+BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 399.90 Tm (Next.js, FastAPI, PostgreSQL, Polars, Redis, SQLGlot, Gemini AI) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 388.90 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 388.90 Tm (Built automated data migration platform for restoring, profiling, cleaning, repairing, and exporting legacy) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 377.30 Tm (SQL dump data.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 365.70 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 365.70 Tm (Uses read-only source staging sandbox, deterministic validation rules, schema repair, and AI-assisted anomaly) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 354.10 Tm (detection.) Tj ET
+BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 339.00 Tm (CipherLens  AI-Powered Defensive Security Auditing Platform) Tj ET
+BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 327.00 Tm (React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Gemini AI, Docker) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 316.00 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 316.00 Tm (Architected defensive security platform automating website header checks, SSL/TLS inspections, and git secret) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 304.40 Tm (scanning.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 292.80 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 292.80 Tm (Integrates Gemini AI to generate structured security findings, vulnerability risk prioritization, and) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 281.20 Tm (actionable remediation guidance.) Tj ET
+BT /F2 10.5 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 264.10 Tm (RELEVANT EXPERIENCE) Tj ET
+0.72 0.61 0.37 RG 1.1 w 34.00 258.10 m 561.00 258.10 l S
+BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 248.10 Tm (Full-Stack Web & Automation Developer) Tj ET
+BT /F1 9 Tf 0.33 0.38 0.45 rg 1 0 0 1 475.00 248.10 Tm (2024  2026) Tj ET
+BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 236.10 Tm (Infosoft \(Mini Clean Business Solutions\)) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 225.10 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 225.10 Tm (Developed full-stack web applications involving database workflows, backend REST APIs, frontend dashboards,) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 213.50 Tm (and automated pipelines.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 201.90 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 201.90 Tm (Engineered SQL migration tooling, browser automation, data extraction, validation flows, and cloud storage) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 190.30 Tm (deployments.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 178.70 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 178.70 Tm (Applied documentation-first planning, modular architecture, and Docker containerization for robust production) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 167.10 Tm (maintainability.) Tj ET
+BT /F2 10 Tf 0.09 0.13 0.20 rg 1 0 0 1 34.00 152.00 Tm (AI & Full-Stack Application Developer) Tj ET
+BT /F1 9 Tf 0.33 0.38 0.45 rg 1 0 0 1 475.00 152.00 Tm (2024  2026) Tj ET
+BT /F1 8.8 Tf 0.72 0.61 0.37 rg 1 0 0 1 34.00 140.00 Tm (Freelancer) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 129.00 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 129.00 Tm (Built custom web applications, client booking systems, crawling/auditing workflows, and backend-driven data) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 117.40 Tm (tools.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 105.80 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 105.80 Tm (Designed and integrated AI agents and LLM APIs to power smart automation, analysis, prediction support, and) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 94.20 Tm (decision assistance.) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 34.00 82.60 Tm (") Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 82.60 Tm (Maintained end-to-end engineering ownership across UI implementation, API design, database modeling, and) Tj ET
+BT /F1 9 Tf 0.17 0.20 0.24 rg 1 0 0 1 46.00 71.00 Tm (production delivery.) Tj ET
 endstream
 endobj
 xref
@@ -128,5 +130,5 @@ xref
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-9864
+10223
 %%EOF

@@ -166,9 +166,9 @@ function centeredText(y, value, size, color = colors.ink, font = "F2") {
 }
 
 function sectionTitle(x, y, value) {
-  text(x, y, value, 11.5, colors.ink, "F2");
-  line(x, y - 8, page.width - page.margin, y - 8, 1.2, colors.accent);
-  return y - 22;
+  text(x, y, value, 10.5, colors.ink, "F2");
+  line(x, y - 6, page.width - page.margin, y - 6, 1.1, colors.accent);
+  return y - 16;
 }
 
 const resume = {
@@ -180,7 +180,7 @@ const resume = {
     { icon: "link", text: "linkedin.com/in/arjay-esc" },
   ],
   summary:
-    "AI Application Developer / AI Engineer focused on building AI-powered automation systems, data migration platforms, crawling and auditing tools, predictive workflows, and data-driven applications. Experienced in full-stack development, backend systems, AI-assisted workflows, database processing, and practical product implementation.",
+    "Full-Stack Web Developer & Automation Builder with AI engineering experience. Proven expertise in building modern web applications, modular full-stack architectures, and responsive interfaces with Next.js, React, Node.js, Laravel, FastAPI, and PostgreSQL. Experienced in automated data pipelines, web scraping, and browser workflows, alongside integrating AI agents and LLMs into practical product logic. Dedicated to Docker containerization and clean software execution.",
   education: {
     school: "University of Mindanao Digos College",
     degree: "Bachelor of Science in Information Technology",
@@ -188,57 +188,57 @@ const resume = {
   skills: [
     ["Languages", "TypeScript, JavaScript, Python, SQL, HTML/CSS"],
     ["Frontend", "React, Next.js, Vue 3, Tailwind CSS, Inertia.js"],
-    ["Backend & APIs", "Laravel, FastAPI, Node.js, Hono, REST APIs, WebSockets, Webhooks"],
-    ["AI & Automation", "AI agents, LLM integration, web scraping, Puppeteer, Browsershot"],
-    ["Databases", "PostgreSQL, MySQL, SQLite, Supabase, SQLAlchemy, SQLGlot, Polars, pandas, Redis"],
-    ["Testing & Debugging", "Postman, anomaly review, structured verification"],
-    ["Cloud", "Azure, Docker, Nginx, Git, GitHub Actions, Cloudflare, DigitalOcean"],
+    ["Backend & APIs", "Laravel, Node.js, FastAPI, Hono, REST APIs, WebSockets, Webhooks"],
+    ["Databases & ORM", "PostgreSQL, MySQL, SQLite, Supabase, Prisma, Redis, SQLAlchemy"],
+    ["Automation & Tools", "Web scraping, Puppeteer, Browsershot, workflow automation, Polars"],
+    ["AI Engineering", "Gemini API, LLM integration, AI agents, prompt engineering, structured review"],
+    ["DevOps & Cloud", "Docker, Azure, Git, GitHub Actions, Nginx, Cloudflare R2, DigitalOcean"],
   ],
   projects: [
     {
       title: "Atelier — Philippine Creative Directory & Professional Service OS",
       stack: "Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik",
       bullets: [
-        "Modular monolith uniting talent discovery, canonical nickname profiles (/[nickname]), booking workflows, and PDF invoicing.",
-        "Engineered booking lifecycle with deposit tracking, tokenized handoffs, private Cloudflare R2 vaults, and Docker/Traefik deployment.",
+        "Engineered full-stack modular monolith featuring public creative discovery, canonical nickname routing (/[nickname]), and PDF invoicing.",
+        "Implemented end-to-end booking workflows with deposit tracking, tokenized handoffs, Cloudflare R2 vaults, and Docker/Traefik deployment.",
       ],
     },
     {
-      title: "SQAuto — Industrial SQL Dump Data Migration Platform",
-      stack: "Next.js, FastAPI, PostgreSQL, Polars, Redis, Gemini, SQLGlot",
+      title: "SQAuto — Industrial SQL Dump Data Migration & Automation Platform",
+      stack: "Next.js, FastAPI, PostgreSQL, Polars, Redis, SQLGlot, Gemini AI",
       bullets: [
-        "Built safe migration pipeline for restoring, profiling, cleaning, repairing, validating, and exporting legacy SQL dump data.",
-        "Uses read-only source principle, sandbox staging, deterministic validation, AI anomaly detection, and multi-DB exports.",
+        "Built automated data migration platform for restoring, profiling, cleaning, repairing, and exporting legacy SQL dump data.",
+        "Uses read-only source staging sandbox, deterministic validation rules, schema repair, and AI-assisted anomaly detection.",
       ],
     },
     {
       title: "CipherLens — AI-Powered Defensive Security Auditing Platform",
-      stack: "React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Docker",
+      stack: "React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Gemini AI, Docker",
       bullets: [
-        "Enterprise-grade defensive security platform for automated auditing of websites and git repositories (SSL/TLS, secrets, CVEs).",
-        "Integrates Gemini AI to generate structured findings, risk prioritization scoring, and actionable remediation guidance.",
+        "Architected defensive security platform automating website header checks, SSL/TLS inspections, and git secret scanning.",
+        "Integrates Gemini AI to generate structured security findings, vulnerability risk prioritization, and actionable remediation guidance.",
       ],
     },
   ],
   experience: [
     {
-      title: "AI Application Developer / Automation Builder",
-      company: "Freelancer",
-      period: "2024 – 2026",
-      bullets: [
-        "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
-        "Designed workflows where AI supports automation, prediction, analysis, validation, or decision support.",
-        "Used AI-assisted development tools while maintaining responsibility for system design, debugging, code quality, and product functionality.",
-      ],
-    },
-    {
-      title: "Full-Stack Automation & System Developer",
+      title: "Full-Stack Web & Automation Developer",
       company: "Infosoft (Mini Clean Business Solutions)",
       period: "2024 – 2026",
       bullets: [
-        "Developed full-stack systems involving database workflows, backend APIs, frontend dashboards, and automated processing pipelines.",
-        "Worked with SQL migration, browser automation, data extraction, validation, cloud storage, and deployment workflows.",
-        "Used documentation-first planning and modular architecture to support safer implementation and maintainability.",
+        "Developed full-stack web applications involving database workflows, backend REST APIs, frontend dashboards, and automated pipelines.",
+        "Engineered SQL migration tooling, browser automation, data extraction, validation flows, and cloud storage deployments.",
+        "Applied documentation-first planning, modular architecture, and Docker containerization for robust production maintainability.",
+      ],
+    },
+    {
+      title: "AI & Full-Stack Application Developer",
+      company: "Freelancer",
+      period: "2024 – 2026",
+      bullets: [
+        "Built custom web applications, client booking systems, crawling/auditing workflows, and backend-driven data tools.",
+        "Designed and integrated AI agents and LLM APIs to power smart automation, analysis, prediction support, and decision assistance.",
+        "Maintained end-to-end engineering ownership across UI implementation, API design, database modeling, and production delivery.",
       ],
     },
   ],
