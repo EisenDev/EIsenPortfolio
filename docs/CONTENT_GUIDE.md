@@ -55,13 +55,12 @@ This document provides guidelines and placeholders for all copy and content with
   - CipherLens: AI security / Defensive auditing platform
   - Atelier: Creative platform / Service operating system
   - SQAuto: Data migration / AI-assisted validation platform
-  - Kairos: AI prediction / Market intelligence
+  - Avenor: AI career platform / Modular monolith
 - **Project-content rules:**
   - Use real README-level project summaries when available.
   - Keep homepage project cards concise and outcome-focused.
   - Avoid dumping entire technical README content into project cards.
   - Use the resume for deeper technical detail and stack context.
-  - Add a clear disclaimer for Kairos-style analytical systems: experimental and not financial advice.
 
 ### 7. Get in Touch
 - **CTA:** "Got a workflow? Let’s automate it."

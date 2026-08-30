@@ -230,5 +230,15 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-08-30] - Project Swap: Kairos to Avenor Case Study
+### Completed
+- **Project Swap:** Replaced experimental concept "Kairos" with real active case study "Avenor" (AI-first Career Management Platform / Modular Monolith).
+- **Screenshot Asset:** Added `public/projects/avenor.png` from `/home/eisen/Downloads/avenor-portfolio.png`.
+- **Data & Architecture Alignment:** Populated `src/data/profile.ts` with Avenor's domain-driven modular monolith architecture, Next.js 16 + React 19 + TypeScript + Prisma + PostgreSQL + Docker stack, multi-provider AI abstractions (Gemini, OpenAI, Anthropic), Google Workspace APIs, and repository link (`https://github.com/EisenDev/Avenor`).
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
 
 
