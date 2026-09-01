@@ -104,7 +104,7 @@ export const profileData = {
       {
         role: "Full-Stack Automation & System Developer",
         company: "Infosoft (Mini Clean Business Solutions)",
-        period: "2024 – 2026",
+        period: "2026",
         description:
           "Developed full-stack systems involving database workflows, backend APIs, frontend dashboards, and automated processing pipelines.",
         highlights: [
@@ -114,15 +114,15 @@ export const profileData = {
         ],
       },
       {
-        role: "UI/UX and Web Implementation Practice",
-        company: "",
-        period: "2023 – 2024",
+        role: "Continuous Applied Practice: Tools, UI/UX, AI & Third-Party APIs",
+        company: "Independent Practice & Learning",
+        period: "2023 – 2026",
         description:
-          "Designed and implemented responsive interfaces, component-based layouts, and clean user flows.",
+          "Continuous hands-on practice exploring modern developer tools, UI/UX design systems, AI integration, and third-party APIs.",
         highlights: [
-          "Used Figma-inspired layouts, Tailwind CSS, reusable frontend structure, and product workflow planning.",
-          "Focused on usability, clarity, and practical product execution.",
-          "Translated interface ideas into maintainable frontend systems.",
+          "Crafted responsive interfaces, reusable component systems, and Figma-to-code workflows using Tailwind CSS.",
+          "Integrated third-party REST APIs, webhooks, authentication services, and cloud storage providers.",
+          "Continuously learning and experimenting with emerging AI tooling, prompt engineering, and automation workflows.",
         ],
       },
     ],

@@ -240,5 +240,16 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-09-01] - Experience Timeline & Continuous Practice Update
+### Completed
+- **Infosoft Timeline:** Updated *Infosoft (Mini Clean Business Solutions)* timeline to `2026` across both the resume PDF generator script and portfolio `profileData.experience`.
+- **Freelancer Experience:** Preserved `AI Application Developer / Automation Builder` (`Freelancer`, `2024 – 2026`) with its core AI automation, crawling/auditing, and system ownership highlights.
+- **Continuous Applied Practice:** Expanded the 3rd experience item in `src/data/profile.ts` to `2023 – 2026` (*"Continuous Applied Practice: Tools, UI/UX, AI & Third-Party APIs"*), reflecting continuous daily hands-on learning across design systems, tools, APIs, and AI integrations.
+- **PDF Alignment & Regeneration:** Dynamically right-aligned period dates to margin in `scripts/generate-resume-pdf.mjs` and regenerated `public/Arjay-Escabas-Resume.pdf` with single-page layout (Final y: 67.5).
+
+### Verification
+- `npm run lint` - passed
+- `npm run build` - passed
+
 
 

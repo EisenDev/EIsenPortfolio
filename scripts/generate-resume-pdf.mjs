@@ -224,7 +224,7 @@ const resume = {
     {
       title: "Full-Stack Web & Automation Developer",
       company: "Infosoft (Mini Clean Business Solutions)",
-      period: "2024 – 2026",
+      period: "2026",
       bullets: [
         "Developed full-stack web applications involving database workflows, backend REST APIs, frontend dashboards, and automated pipelines.",
         "Engineered SQL migration tooling, browser automation, data extraction, validation flows, and cloud storage deployments.",
@@ -232,13 +232,13 @@ const resume = {
       ],
     },
     {
-      title: "AI & Full-Stack Application Developer",
+      title: "AI Application Developer / Automation Builder",
       company: "Freelancer",
       period: "2024 – 2026",
       bullets: [
-        "Built custom web applications, client booking systems, crawling/auditing workflows, and backend-driven data tools.",
-        "Designed and integrated AI agents and LLM APIs to power smart automation, analysis, prediction support, and decision assistance.",
-        "Maintained end-to-end engineering ownership across UI implementation, API design, database modeling, and production delivery.",
+        "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
+        "Designed workflows where AI supports automation, prediction, analysis, validation, or decision support.",
+        "Used AI-assisted development tools while maintaining responsibility for system design, debugging, code quality, and product functionality.",
       ],
     },
   ],
@@ -287,7 +287,8 @@ y -= 2;
 y = sectionTitle(page.margin, y, "RELEVANT EXPERIENCE");
 for (const item of resume.experience) {
   text(page.margin, y, item.title, 10.0, colors.ink, "F2");
-  text(475, y, item.period, 9.0, colors.muted, "F1");
+  const periodX = page.width - page.margin - estimateTextWidth(item.period, 9.0);
+  text(periodX, y, item.period, 9.0, colors.muted, "F1");
   y -= 12;
   if (item.company) {
     text(page.margin, y, item.company, 8.8, colors.accent, "F1");
