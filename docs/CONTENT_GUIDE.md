@@ -44,7 +44,8 @@ This document provides guidelines and placeholders for all copy and content with
     - **Design & product execution:** UI/UX implementation, Figma, responsive layouts, component systems, documentation-first planning, product workflow planning.
 
 ### 4. Experience
-- **Rules:** Use real 2-3 year ranges (e.g., 2024 – 2026). Do not use "Present." Do not imply current employment if not confirmed. Keep roles grounded and execution-focused.
+- **Active Current Role:** Senior Developer (Founding Developer) at Old World Stone Imports USA (OWSI) & Gemstone Development LLC (Utah, USA - Skyler Berry ventures), 2026 – Present. Highlighted at the very top with active position beacon, platform delivery highlights, and AI assistant/Onorca workflows.
+- **Rules:** Clearly distinguish the confirmed active current position at the top from prior roles (Infosoft, Freelancer, Continuous Applied Practice). Keep roles grounded and execution-focused.
 
 ### 5. AI Application Development
 - **Label:** AI workflow

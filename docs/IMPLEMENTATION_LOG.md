@@ -251,5 +251,14 @@ This log tracks major implementation milestones and content updates for the my-p
 - `npm run lint` - passed
 - `npm run build` - passed
 
+## [2026-10-04] - Current Senior Developer Role & AI Workflow (Onorca) Integration
+### Completed
+- **Current Experience Addition:** Added new highlighted top experience entry for `Senior Developer (Founding Developer)` across sister enterprises `Old World Stone Imports USA (OWSI)` and `Gemstone Development LLC` (Utah, USA - Skyler Berry ventures).
+- **Multi-Enterprise Scope & Deliverables:** Documented technical leadership as one of the first two founding engineers handling both companies and future expansions, delivering 3 core platforms (family enterprise portal, internal Gemstone operations platform, and internal SaaS-ready architecture).
+- **Visual Highlighting on Timeline:** Upgraded `ExperienceSection` with an active pulsing beacon node, elevated container card with subtle accent glow, tags chip list, and "Current Role" status badge for immediate visual prominence at the very top of the timeline.
+- **AI Workflow & Onorca Integration:** Added `Onorca` and embedded AI assistants across `profileData.skills` (AI application development), `profileData.techStack` (AI & automation), `profileData.aiAutomation` (Embedded AI assistants & workflow acceleration), and `profileData.tools` (AI Agents & Workflows).
+- **Resume PDF Regeneration:** Synchronized `scripts/generate-resume-pdf.mjs` with the Senior Developer role, summary updates, Onorca tool additions, and tuned vertical spacing to preserve single-page layout (Final y: 66.4).
+
+
 
 

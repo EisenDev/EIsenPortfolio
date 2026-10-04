@@ -51,6 +51,8 @@ export const profileData = {
       {
         name: "AI application development",
         items: [
+          "Embedded AI assistants",
+          "Onorca",
           "Gemini API",
           "LLM integration",
           "AI agents",
@@ -89,6 +91,29 @@ export const profileData = {
     description:
       "Recent work centered on practical product building, AI workflows, automation systems, and clean implementation.",
     items: [
+      {
+        role: "Senior Developer (Founding Developer)",
+        company: "Old World Stone Imports USA (OWSI) & Gemstone Development LLC",
+        location: "Utah, USA (Remote)",
+        period: "2026 – Present",
+        current: true,
+        highlighted: true,
+        tags: [
+          "Founding Developer",
+          "AI Assistant Workflows",
+          "Onorca",
+          "3 Shipped Platforms",
+          "Internal SaaS Architecture",
+        ],
+        description:
+          "Serving as one of the first two foundational developers across sister enterprises Old World Stone Imports USA (OWSI) and Gemstone Development LLC under founder Skyler Berry. Architecting and shipping enterprise web platforms, operational management systems, and SaaS-ready architectures embedded with AI assistants and automated workflows.",
+        highlights: [
+          "Spearheading full-stack engineering and system architecture across dual Utah-based enterprises (OWSI and Gemstone Development LLC) and upcoming ventures under unified leadership as one of the first two developers.",
+          "Architected, built, and shipped 3 core web platforms: the official family enterprise website, an internal operations & development portal for Gemstone Development LLC, and high-performance internal SaaS-ready platforms built for scalable multi-tenant execution.",
+          "Embedded intelligent AI assistants and automated intelligence layers directly into web platforms, accelerating day-to-day team workflows, data processing, and operational efficiency.",
+          "Leveraged cutting-edge AI-accelerated development workflows (including Onorca) to rapidly prototype, build, and optimize enterprise systems with high speed and high reliability.",
+        ],
+      },
       {
         role: "AI Application Developer / Automation Builder",
         company: "Freelancer",
@@ -146,7 +171,7 @@ export const profileData = {
       },
       {
         name: "AI & automation",
-        items: ["Gemini API", "AI agents", "Prompt engineering", "Puppeteer", "Browsershot", "Workflow automation"],
+        items: ["Onorca", "Embedded AI Assistants", "Gemini API", "AI agents", "Prompt engineering", "Puppeteer", "Browsershot", "Workflow automation"],
       },
     ],
   },
@@ -155,6 +180,12 @@ export const profileData = {
     description:
       "How I approach AI as part of the product, workflow, and system logic.",
     items: [
+      {
+        title: "Embedded AI assistants & workflow acceleration",
+        description:
+          "Embedding intelligent AI assistants and automated review workflows directly into websites and internal platforms (leveraging Onorca and LLM integrations) to streamline daily operations, automate repetitive tasks, and unlock faster team productivity.",
+        tags: ["Onorca", "AI Assistants", "Acceleration"],
+      },
       {
         title: "AI-powered workflows",
         description:
@@ -197,8 +228,8 @@ export const profileData = {
         items: ["GitHub", "Docker", "Postman", "VS Code", "Antigravity"],
       },
       {
-        name: "AI Agents",
-        items: ["ChatGPT", "Gemini CLI", "Codex CLI", "Claude"],
+        name: "AI Agents & Workflows",
+        items: ["Onorca", "ChatGPT", "Gemini CLI", "Codex CLI", "Claude"],
       },
       {
         name: "Design",

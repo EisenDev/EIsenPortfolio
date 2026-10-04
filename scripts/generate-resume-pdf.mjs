@@ -167,8 +167,8 @@ function centeredText(y, value, size, color = colors.ink, font = "F2") {
 
 function sectionTitle(x, y, value) {
   text(x, y, value, 10.5, colors.ink, "F2");
-  line(x, y - 6, page.width - page.margin, y - 6, 1.1, colors.accent);
-  return y - 16;
+  line(x, y - 5, page.width - page.margin, y - 5, 1.1, colors.accent);
+  return y - 14;
 }
 
 const resume = {
@@ -180,7 +180,7 @@ const resume = {
     { icon: "link", text: "linkedin.com/in/arjay-esc" },
   ],
   summary:
-    "Full-Stack Web Developer & Automation Builder with AI engineering experience. Proven expertise in building modern web applications, modular full-stack architectures, and responsive interfaces with Next.js, React, Node.js, Laravel, FastAPI, and PostgreSQL. Experienced in automated data pipelines, web scraping, and browser workflows, alongside integrating AI agents and LLMs into practical product logic. Dedicated to Docker containerization and clean software execution.",
+    "Senior Full-Stack Web Developer & Automation Engineer with AI engineering expertise. Proven track record architecting multi-company enterprise web platforms, scalable internal SaaS systems, and responsive interfaces with Next.js, React, Node.js, Laravel, FastAPI, and PostgreSQL. Experienced in integrating embedded AI assistants, Onorca workflows, and LLMs into practical product logic, alongside automated data pipelines and containerized deployments.",
   education: {
     school: "University of Mindanao Digos College",
     degree: "Bachelor of Science in Information Technology",
@@ -190,8 +190,8 @@ const resume = {
     ["Frontend", "React, Next.js, Vue 3, Tailwind CSS, Inertia.js"],
     ["Backend & APIs", "Laravel, Node.js, FastAPI, Hono, REST APIs, WebSockets, Webhooks"],
     ["Databases & ORM", "PostgreSQL, MySQL, SQLite, Supabase, Prisma, Redis, SQLAlchemy"],
-    ["Automation & Tools", "Web scraping, Puppeteer, Browsershot, workflow automation, Polars"],
-    ["AI Engineering", "Gemini API, LLM integration, AI agents, prompt engineering, structured review"],
+    ["Automation & Tools", "Onorca, Web scraping, Puppeteer, Browsershot, workflow automation, Polars"],
+    ["AI Engineering", "Embedded AI assistants, Gemini API, LLM integration, AI agents, prompt engineering"],
     ["DevOps & Cloud", "Docker, Azure, Git, GitHub Actions, Nginx, Cloudflare R2, DigitalOcean"],
   ],
   projects: [
@@ -222,13 +222,22 @@ const resume = {
   ],
   experience: [
     {
+      title: "Senior Developer (Founding Developer)",
+      company: "OWSI (Old World Stone Imports USA) & Gemstone Development LLC",
+      period: "2026 – Present",
+      bullets: [
+        "Founding core developer across dual Utah enterprises owned by Skyler Berry, directing platform architecture across both parent and sister ventures.",
+        "Delivered 3 core web systems: public family enterprise portal, Gemstone Development internal portal, and scalable internal SaaS-ready platforms.",
+        "Embedded intelligent AI assistants and accelerated workflows (Onorca, LLMs) directly into platform logic for high-speed team operations.",
+      ],
+    },
+    {
       title: "Full-Stack Web & Automation Developer",
       company: "Infosoft (Mini Clean Business Solutions)",
       period: "2026",
       bullets: [
         "Developed full-stack web applications involving database workflows, backend REST APIs, frontend dashboards, and automated pipelines.",
         "Engineered SQL migration tooling, browser automation, data extraction, validation flows, and cloud storage deployments.",
-        "Applied documentation-first planning, modular architecture, and Docker containerization for robust production maintainability.",
       ],
     },
     {
@@ -237,67 +246,66 @@ const resume = {
       period: "2024 – 2026",
       bullets: [
         "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
-        "Designed workflows where AI supports automation, prediction, analysis, validation, or decision support.",
-        "Used AI-assisted development tools while maintaining responsibility for system design, debugging, code quality, and product functionality.",
+        "Designed workflows where AI supports automation, prediction, analysis, validation, and decision support with clean system ownership.",
       ],
     },
   ],
 };
 
-let y = page.height - 48;
+let y = page.height - 42;
 
 centeredText(y, resume.name, 21, colors.ink, "F2");
-y -= 18;
+y -= 16;
 centeredContactLine(y, resume.contactItems, 8.2);
-y -= 15;
+y -= 13;
 line(page.margin, y, page.width - page.margin, y, 1.15, colors.ink);
-y -= 17;
+y -= 14;
 
 y = sectionTitle(page.margin, y, "PROFESSIONAL SUMMARY");
-y = paragraph(page.margin, y, resume.summary, { size: 9.6, lineHeight: 13.2, maxChars: 112 });
-y -= 7;
+y = paragraph(page.margin, y, resume.summary, { size: 9.5, lineHeight: 12.8, maxChars: 112 });
+y -= 5;
 
 y = sectionTitle(page.margin, y, "EDUCATION");
-text(page.margin, y, resume.education.school, 10.5, colors.ink, "F2");
+text(page.margin, y, resume.education.school, 10.2, colors.ink, "F2");
+y -= 12;
+text(page.margin, y, resume.education.degree, 9.0, colors.text, "F1");
 y -= 13;
-text(page.margin, y, resume.education.degree, 9.2, colors.text, "F1");
-y -= 16;
 
 y = sectionTitle(page.margin, y, "TECHNICAL SKILLS");
 for (const [label, value] of resume.skills) {
-  text(page.margin, y, `${label}:`, 9.2, colors.ink, "F2");
-  y = paragraph(page.margin + 110, y, value, { size: 9.0, lineHeight: 11.6, maxChars: 88 });
+  text(page.margin, y, `${label}:`, 9.0, colors.ink, "F2");
+  y = paragraph(page.margin + 110, y, value, { size: 8.8, lineHeight: 11.2, maxChars: 90 });
   y -= 1;
 }
 
-y -= 5;
+y -= 4;
 y = sectionTitle(page.margin, y, "FEATURED PROJECTS");
 for (const project of resume.projects) {
-  text(page.margin, y, project.title, 10.0, colors.ink, "F2");
-  y -= 12;
-  text(page.margin, y, project.stack, 8.8, colors.accent, "F1");
+  text(page.margin, y, project.title, 9.8, colors.ink, "F2");
   y -= 11;
+  text(page.margin, y, project.stack, 8.6, colors.accent, "F1");
+  y -= 10;
   for (const bullet of project.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 9.0, lineHeight: 11.6, maxChars: 110, bullet: true });
+    y = paragraph(page.margin, y, bullet, { size: 8.8, lineHeight: 11.2, maxChars: 112, bullet: true });
   }
-  y -= 3.5;
+  y -= 3;
 }
 
 y -= 2;
 y = sectionTitle(page.margin, y, "RELEVANT EXPERIENCE");
 for (const item of resume.experience) {
-  text(page.margin, y, item.title, 10.0, colors.ink, "F2");
-  const periodX = page.width - page.margin - estimateTextWidth(item.period, 9.0);
-  text(periodX, y, item.period, 9.0, colors.muted, "F1");
-  y -= 12;
+  text(page.margin, y, item.title, 9.8, colors.ink, "F2");
+  const periodX = page.width - page.margin - estimateTextWidth(item.period, 8.8);
+  text(periodX, y, item.period, 8.8, colors.muted, "F1");
+  y -= 11;
   if (item.company) {
-    text(page.margin, y, item.company, 8.8, colors.accent, "F1");
-    y -= 11;
+    text(page.margin, y, item.company, 8.6, colors.accent, "F1");
+    y -= 10;
   }
   for (const bullet of item.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 9.0, lineHeight: 11.6, maxChars: 110, bullet: true });
+    y = paragraph(page.margin, y, bullet, { size: 8.8, lineHeight: 11.2, maxChars: 112, bullet: true });
   }
-  y -= 3.5;
+  y -= 3;
 }
 
 const stream = content.join("\n");
