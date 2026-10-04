@@ -105,11 +105,12 @@ export const profileData = {
           "3 Shipped Platforms",
           "Internal SaaS Architecture",
         ],
+        impact: "Implemented websites and automated features that reduced company operational workload by 60%.",
         description:
           "Serving as one of the first two foundational developers across sister enterprises Old World Stone Imports USA (OWSI) and Gemstone Development LLC under founder Skyler Berry. Architecting and shipping enterprise web platforms, operational management systems, and SaaS-ready architectures embedded with AI assistants and automated workflows.",
         highlights: [
           "Spearheading full-stack engineering and system architecture across dual Utah-based enterprises (OWSI and Gemstone Development LLC) and upcoming ventures under unified leadership as one of the first two developers.",
-          "Architected, built, and shipped 3 core web platforms: the official family enterprise website, an internal operations & development portal for Gemstone Development LLC, and high-performance internal SaaS-ready platforms built for scalable multi-tenant execution.",
+          "Architected, built, and shipped 3 core web platforms (official family enterprise website, internal Gemstone operations portal, and SaaS-ready architectures), introducing automated features that reduced company operational workload by 60%.",
           "Embedded intelligent AI assistants and automated intelligence layers directly into web platforms, accelerating day-to-day team workflows, data processing, and operational efficiency.",
           "Leveraged cutting-edge AI-accelerated development workflows (including Onorca) to rapidly prototype, build, and optimize enterprise systems with high speed and high reliability.",
         ],

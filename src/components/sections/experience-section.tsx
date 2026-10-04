@@ -3,7 +3,7 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { MotionWrapper } from "@/components/motion/motion-wrapper";
 import { profileData } from "@/data/profile";
 import { cn } from "@/lib/utils";
-import { Sparkles, MapPin } from "lucide-react";
+import { Sparkles, MapPin, TrendingUp } from "lucide-react";
 
 export function ExperienceSection() {
   const { experience } = profileData;
@@ -26,6 +26,7 @@ export function ExperienceSection() {
             const isCurrent = Boolean("current" in item && item.current);
             const tags = "tags" in item && Array.isArray(item.tags) ? (item.tags as string[]) : [];
             const location = "location" in item && typeof item.location === "string" ? item.location : null;
+            const impact = "impact" in item && typeof item.impact === "string" ? item.impact : null;
 
             return (
               <li key={index} className="relative">
@@ -94,6 +95,22 @@ export function ExperienceSection() {
                           <p className="text-foreground/80 dark:text-muted leading-relaxed max-w-xl text-sm sm:text-base">
                             {item.description}
                           </p>
+
+                          {impact && (
+                            <div className="my-5 p-4 rounded-xl bg-accent/10 border border-accent/25 flex items-center gap-3.5">
+                              <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center shrink-0">
+                                <TrendingUp className="w-5 h-5 text-accent" />
+                              </div>
+                              <div>
+                                <span className="text-[11px] font-bold uppercase tracking-wider text-accent block">
+                                  Key Operational Impact
+                                </span>
+                                <p className="text-xs sm:text-sm font-semibold text-foreground/90 leading-snug">
+                                  {impact}
+                                </p>
+                              </div>
+                            </div>
+                          )}
 
                           {item.highlights ? (
                             <ul className="mt-5 space-y-3 list-none p-0 max-w-xl">

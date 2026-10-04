@@ -227,7 +227,7 @@ const resume = {
       period: "2026 – Present",
       bullets: [
         "Founding core developer across dual Utah enterprises owned by Skyler Berry, directing platform architecture across both parent and sister ventures.",
-        "Delivered 3 core web systems: public family enterprise portal, Gemstone Development internal portal, and scalable internal SaaS-ready platforms.",
+        "Delivered 3 web platforms with automated features, reducing company operational workload by 60% via embedded AI & internal tooling.",
         "Embedded intelligent AI assistants and accelerated workflows (Onorca, LLMs) directly into platform logic for high-speed team operations.",
       ],
     },

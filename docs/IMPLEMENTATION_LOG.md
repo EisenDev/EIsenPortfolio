@@ -258,6 +258,7 @@ This log tracks major implementation milestones and content updates for the my-p
 - **Visual Highlighting on Timeline:** Upgraded `ExperienceSection` with an active pulsing beacon node, elevated container card with subtle accent glow, tags chip list, and "Current Role" status badge for immediate visual prominence at the very top of the timeline.
 - **AI Workflow & Onorca Integration:** Added `Onorca` and embedded AI assistants across `profileData.skills` (AI application development), `profileData.techStack` (AI & automation), `profileData.aiAutomation` (Embedded AI assistants & workflow acceleration), and `profileData.tools` (AI Agents & Workflows).
 - **Resume PDF Regeneration:** Synchronized `scripts/generate-resume-pdf.mjs` with the Senior Developer role, summary updates, Onorca tool additions, and tuned vertical spacing to preserve single-page layout (Final y: 66.4).
+- **Measurable Impact Addition:** Added key impact metric (*"Implemented websites and automated features that reduced company operational workload by 60%"*) across `profileData.experience`, a dedicated `TrendingUp` impact banner in `ExperienceSection`, and the resume PDF.
 
 
 
