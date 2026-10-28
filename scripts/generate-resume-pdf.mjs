@@ -196,27 +196,27 @@ const resume = {
   ],
   projects: [
     {
-      title: "Atelier — Philippine Creative Directory & Professional Service OS",
-      stack: "Next.js 15, React 19, TypeScript, Prisma 7, PostgreSQL, Tailwind CSS, Cloudflare R2, PDF-Lib, Docker, Traefik",
+      title: "Gemstone Construction — Construction Operations & Financial Workspace (Sole Developer)",
+      stack: "Next.js 16, React 19, TypeScript, PostgreSQL, Supabase, Anthropic Claude AI, Leaflet, RingCentral SMS, PWA",
       bullets: [
-        "Engineered full-stack modular monolith featuring public creative discovery, canonical nickname routing (/[nickname]), and PDF invoicing.",
-        "Implemented end-to-end booking workflows with deposit tracking, tokenized handoffs, Cloudflare R2 vaults, and Docker/Traefik deployment.",
+        "Personally architected full-stack construction workspace & PWA covering project budgets, AI PDF bid intake/leveling, AP invoices, and bank draws.",
+        "Built interactive multi-crew scheduler with contractor RSVP portals, automated reminder crons, and RingCentral SMS notifications.",
       ],
     },
     {
-      title: "SQAuto — Industrial SQL Dump Data Migration & Automation Platform",
-      stack: "Next.js, FastAPI, PostgreSQL, Polars, Redis, SQLGlot, Gemini AI",
+      title: "OWSI Giveaways — Verified Campaign & Live Raffle Engine (Sole Developer)",
+      stack: "Next.js 16, React 19, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, Anthropic AI, Meta Graph API, Resend",
       bullets: [
-        "Built automated data migration platform for restoring, profiling, cleaning, repairing, and exporting legacy SQL dump data.",
-        "Uses read-only source staging sandbox, deterministic validation rules, schema repair, and AI-assisted anomaly detection.",
+        "Engineered custom Gleam replacement featuring hybrid Meta API comment verification, screenshot review queues, and passwordless OTP portals.",
+        "Implemented synchronized live raffle wheel draw rooms with weighted/equal odds, practice spins, and immutable draw audit trails.",
       ],
     },
     {
-      title: "CipherLens — AI-Powered Defensive Security Auditing Platform",
-      stack: "React, TypeScript, NestJS, Python, FastAPI, PostgreSQL, Supabase, Redis, BullMQ, Gemini AI, Docker",
+      title: "OWSI Notebook — Collaborative Interior Design Canvas & Client OS (Core Contributor)",
+      stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4, Zustand, TanStack Query, Supabase, PostgreSQL, Yjs, AWS S3",
       bullets: [
-        "Architected defensive security platform automating website header checks, SSL/TLS inspections, and git secret scanning.",
-        "Integrates Gemini AI to generate structured security findings, vulnerability risk prioritization, and actionable remediation guidance.",
+        "Co-developed OneNote-inspired design workspace supporting free-form canvases, rich tables, ink drawing, OneNote imports, and AI visual tools.",
+        "Built Standard/Full House design boards, slab worksheets, and scoped client-sharing portals with real-time SSE and Yjs collaboration.",
       ],
     },
   ],

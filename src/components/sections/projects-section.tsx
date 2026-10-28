@@ -93,10 +93,10 @@ export function ProjectsSection() {
 
                     <div className="mt-auto">
                       <Link
-                        href={project.websiteUrl ?? project.repositoryUrl}
+                        href={("websiteUrl" in project && project.websiteUrl ? project.websiteUrl : "repositoryUrl" in project && project.repositoryUrl ? project.repositoryUrl : "#")}
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={`${project.websiteUrl ? 'View website' : 'View repository'} for ${project.title}`}
+                        aria-label={`${"websiteUrl" in project && project.websiteUrl ? 'View website' : 'View repository'} for ${project.title}`}
                         className={cn(
                           "w-full gap-3 group/btn py-6",
                           "inline-flex items-center justify-center rounded-sm font-bold tracking-tight transition-all duration-300",
@@ -104,7 +104,7 @@ export function ProjectsSection() {
                           buttonVariants.sizes.md
                         )}
                       >
-                        {project.websiteUrl ? "View Website" : "View Repository"}
+                        {"websiteUrl" in project && project.websiteUrl ? "View Website" : "View Repository"}
                         <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" aria-hidden="true" />
                       </Link>
                     </div>

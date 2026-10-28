@@ -260,6 +260,16 @@ This log tracks major implementation milestones and content updates for the my-p
 - **Resume PDF Regeneration:** Synchronized `scripts/generate-resume-pdf.mjs` with the Senior Developer role, summary updates, Onorca tool additions, and tuned vertical spacing to preserve single-page layout (Final y: 66.4).
 - **Measurable Impact Addition:** Added key impact metric (*"Implemented websites and automated features that reduced company operational workload by 60%"*) across `profileData.experience`, a dedicated `TrendingUp` impact banner in `ExperienceSection`, and the resume PDF.
 
+## [2026-10-29] - Live Production Projects Integration (Gemstone Construction, OWSI Giveaways, OWSI Notebook)
+### Completed
+- **Project Replacements:** Replaced `CipherLens`, `Atelier`, and `SQAuto` in `src/data/profile.ts` and `scripts/generate-resume-pdf.mjs` with the three live production platforms built for Old World Stone Imports (OWSI) and Gemstone Development LLC:
+  1. **Gemstone Construction** (`https://gemstone-construction.owsiusa.com/`) — Sole Developer · Live Production.
+  2. **OWSI Giveaways** (`https://giveaways.owsiusa.com/`) — Sole Developer · Live Production.
+  3. **OWSI Notebook** (`https://notebook.owsiusa.com/`) — Core Contributor (2-Dev Team) · Live Production.
+- **Live Landing Page Screenshots:** Captured high-resolution 16:9 landing page screenshots directly from the production URLs and saved them to `public/projects/gemstone-construction.png`, `public/projects/owsi-giveaways.png`, and `public/projects/owsi-notebook.png`.
+- **Codebase-Verified Details:** Populated accurate stack chips and architectural highlights from the local production repositories (`/home/eisen/workspace/Gemstone Constructions`, `/home/eisen/workspace/OWSI-giveaway`, and `/home/eisen/workspace/owsi-new/owsi-app`).
+- **Resume PDF Sync:** Updated `scripts/generate-resume-pdf.mjs` and regenerated `public/Arjay-Escabas-Resume.pdf`.
+
 
 
 

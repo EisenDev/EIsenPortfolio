@@ -53,9 +53,9 @@ This document provides guidelines and placeholders for all copy and content with
 
 ### 6. Selected Work
 - **Format:**
-  - CipherLens: AI security / Defensive auditing platform
-  - Atelier: Creative platform / Service operating system
-  - SQAuto: Data migration / AI-assisted validation platform
+  - Gemstone Construction: Construction operations / Project & financial workspace (Sole Developer · Live Production)
+  - OWSI Giveaways: Verified campaign platform / Live raffle & giveaway engine (Sole Developer · Live Production)
+  - OWSI Notebook: Interior design workspace / Collaborative canvas & client OS (Core Contributor · Live Production)
   - Avenor: AI career platform / Modular monolith
 - **Project-content rules:**
   - Use real README-level project summaries when available.
