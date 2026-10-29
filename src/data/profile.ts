@@ -51,9 +51,10 @@ export const profileData = {
       {
         name: "AI application development",
         items: [
+          "Anthropic Claude SDK",
+          "Gemini API",
           "Embedded AI assistants",
           "Onorca",
-          "Gemini API",
           "LLM integration",
           "AI agents",
           "Prompt engineering",
@@ -61,15 +62,15 @@ export const profileData = {
         ],
       },
       {
-        name: "Automation & crawling",
+        name: "QA, testing & automation",
         items: [
-          "Web scraping",
+          "Playwright (E2E suites)",
+          "Vitest",
+          "Automated regression testing",
+          "SQL/RLS security testing",
           "Browser automation",
           "Puppeteer",
-          "Browsershot",
-          "Crawling workflows",
-          "Auditing systems",
-          "Validation workflows",
+          "Auditing & validation workflows",
         ],
       },
       {
@@ -171,8 +172,8 @@ export const profileData = {
         items: ["PostgreSQL", "Supabase", "Redis"],
       },
       {
-        name: "AI & automation",
-        items: ["Onorca", "Embedded AI Assistants", "Gemini API", "AI agents", "Prompt engineering", "Puppeteer", "Browsershot", "Workflow automation"],
+        name: "AI, QA & automation",
+        items: ["Anthropic Claude", "Gemini API", "Onorca", "Playwright", "Vitest", "AI agents", "Puppeteer", "Workflow automation"],
       },
     ],
   },
@@ -225,8 +226,8 @@ export const profileData = {
       "Supporting tools I use for development, AI-assisted work, design, and day-to-day execution.",
     categories: [
       {
-        name: "Development",
-        items: ["GitHub", "Docker", "Postman", "VS Code", "Antigravity"],
+        name: "Development & QA",
+        items: ["Playwright", "Vitest", "Sentry", "GitHub", "Docker", "Postman", "VS Code", "Antigravity"],
       },
       {
         name: "AI Agents & Workflows",

@@ -17,7 +17,13 @@ const colors = {
 const content = [];
 
 function esc(value) {
-  return String(value).replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)");
+  return String(value)
+    .replace(/\\/g, "\\\\")
+    .replace(/\(/g, "\\(")
+    .replace(/\)/g, "\\)")
+    .replace(/•/g, "\\225")
+    .replace(/–/g, "\\226")
+    .replace(/—/g, "\\227");
 }
 
 function text(x, y, value, size = 11, color = colors.text, font = "F1") {
@@ -52,8 +58,16 @@ function circle(cx, cy, radius, strokeWidth = 1, color = colors.muted) {
   );
 }
 
-function estimateTextWidth(value, size) {
-  return value.length * size * 0.46;
+function estimateTextWidth(value, size, bold = false) {
+  let units = 0;
+  for (const ch of String(value)) {
+    if ("il.,:;|!I' ".includes(ch)) units += 0.28;
+    else if ("ftrj()-/".includes(ch)) units += 0.34;
+    else if ("mwMW@%&—".includes(ch)) units += 0.82;
+    else if (ch >= "A" && ch <= "Z") units += 0.68;
+    else units += 0.54;
+  }
+  return units * size * (bold ? 1.05 : 1.0);
 }
 
 function drawPhoneIcon(x, y) {
@@ -86,10 +100,10 @@ function drawIcon(kind, x, y) {
   if (kind === "link") drawLinkIcon(x, y);
 }
 
-function centeredContactLine(y, items, size = 8.2) {
+function centeredContactLine(y, items, size = 8.0) {
   const iconWidth = 8;
   const iconGap = 4;
-  const itemGap = 14;
+  const itemGap = 9;
   const separatorWidth = estimateTextWidth("|", size);
   let totalWidth = 0;
 
@@ -137,10 +151,10 @@ function wrap(value, maxChars) {
 
 function paragraph(x, y, value, options = {}) {
   const {
-    size = 10,
+    size = 9.5,
     color = colors.text,
-    lineHeight = 13,
-    maxChars = 104,
+    lineHeight = 12,
+    maxChars = 108,
     bullet = false,
   } = options;
 
@@ -149,10 +163,10 @@ function paragraph(x, y, value, options = {}) {
 
   lines.forEach((lineText, index) => {
     if (bullet && index === 0) {
-      text(x, cursor, "•", size, color);
-      text(x + 12, cursor, lineText, size, color);
+      text(x, cursor, "•", size, colors.accent, "F2");
+      text(x + 10, cursor, lineText, size, color);
     } else {
-      text(bullet ? x + 12 : x, cursor, lineText, size, color);
+      text(bullet ? x + 10 : x, cursor, lineText, size, color);
     }
     cursor -= lineHeight;
   });
@@ -161,152 +175,160 @@ function paragraph(x, y, value, options = {}) {
 }
 
 function centeredText(y, value, size, color = colors.ink, font = "F2") {
-  const x = page.width / 2 - estimateTextWidth(value, size) / 2;
+  const x = page.width / 2 - estimateTextWidth(value, size, font === "F2") / 2;
   text(x, y, value, size, color, font);
 }
 
 function sectionTitle(x, y, value) {
-  text(x, y, value, 10.5, colors.ink, "F2");
+  text(x, y, value, 10.2, colors.ink, "F2");
   line(x, y - 5, page.width - page.margin, y - 5, 1.1, colors.accent);
-  return y - 14;
+  return y - 14.5;
 }
 
 const resume = {
   name: "ARJAY ESCABAS",
+  headline: "SENIOR FULL-STACK DEVELOPER  |  AI ENGINEER  |  QA & TEST AUTOMATION",
   contactItems: [
     { icon: "phone", text: "+63 956 948 3717" },
     { icon: "mail", text: "arjayescabas102@gmail.com" },
-    { icon: "pin", text: "Philippines" },
+    { icon: "pin", text: "Philippines (Remote)" },
+    { icon: "link", text: "arjayescabas.me" },
     { icon: "link", text: "linkedin.com/in/arjay-esc" },
   ],
   summary:
-    "Senior Full-Stack Web Developer & Automation Engineer with AI engineering expertise. Proven track record architecting multi-company enterprise web platforms, scalable internal SaaS systems, and responsive interfaces with Next.js, React, Node.js, Laravel, FastAPI, and PostgreSQL. Experienced in integrating embedded AI assistants, Onorca workflows, and LLMs into practical product logic, alongside automated data pipelines and containerized deployments.",
-  education: {
-    school: "University of Mindanao Digos College",
-    degree: "Bachelor of Science in Information Technology",
-  },
+    "Senior Full-Stack Developer, AI Engineer & QA Automation Specialist. Founding engineer for Utah-based enterprises (OWSI & Gemstone Development LLC), architecting production platforms that reduced company operational workload by 60%. Proven expertise in LLM/agent orchestration (Anthropic Claude SDK, Gemini API, Onorca), modern web systems (Next.js 16, React 19, TypeScript, Python, FastAPI, PostgreSQL, Supabase), and rigorous software quality engineering (Playwright E2E browser suites, Vitest, SQL RLS security testing, API validation, and CI/CD quality gates).",
   skills: [
-    ["Languages", "TypeScript, JavaScript, Python, SQL, HTML/CSS"],
-    ["Frontend", "React, Next.js, Vue 3, Tailwind CSS, Inertia.js"],
-    ["Backend & APIs", "Laravel, Node.js, FastAPI, Hono, REST APIs, WebSockets, Webhooks"],
-    ["Databases & ORM", "PostgreSQL, MySQL, SQLite, Supabase, Prisma, Redis, SQLAlchemy"],
-    ["Automation & Tools", "Onorca, Web scraping, Puppeteer, Browsershot, workflow automation, Polars"],
-    ["AI Engineering", "Embedded AI assistants, Gemini API, LLM integration, AI agents, prompt engineering"],
-    ["DevOps & Cloud", "Docker, Azure, Git, GitHub Actions, Nginx, Cloudflare R2, DigitalOcean"],
+    ["AI Engineering & LLMs", "Anthropic Claude SDK, Gemini API, OpenAI, Onorca Workflows, AI Agents, Prompt Engineering, PDF/Document AI Parsing"],
+    ["QA & Test Automation", "Playwright (E2E Browser Suites), Vitest, Regression Testing, API & Webhook Validation, SQL/RLS Security Testing, TDD, Sentry"],
+    ["Frontend & Web", "TypeScript, JavaScript, React 19, Next.js 16 (App Router), Vue 3, Tailwind CSS 4, Zustand, TanStack Query, PWA"],
+    ["Backend & APIs", "Node.js, Python, FastAPI, Laravel, REST APIs, Server Actions, SSE / WebSockets, Meta Graph & RingCentral APIs"],
+    ["Data, Cloud & DevOps", "PostgreSQL, Supabase (Auth, RLS, Storage), Prisma, Redis, AWS S3, Cloudflare R2, Docker, GitHub Actions CI/CD, Vercel"],
+  ],
+  experience: [
+    {
+      title: "Senior Developer — AI, Full-Stack & QA Lead (Founding Developer)",
+      company: "Old World Stone Imports USA (OWSI) & Gemstone Development LLC — Utah, USA (Remote)",
+      period: "2026 – Present",
+      bullets: [
+        "Founding engineer (1 of 2 developers) directing architecture, AI integration, and QA across 3 production web platforms (gemstone-construction.owsiusa.com, giveaways.owsiusa.com, notebook.owsiusa.com), reducing company operational workload by 60%.",
+        "Engineered embedded AI workflows (Anthropic Claude PDF bid/plan verification, AI Visual Studio tools, Onorca agent orchestration) alongside deterministic financial and campaign systems.",
+        "Built comprehensive Playwright E2E test suites, Vitest unit tests, hydration verifiers, and PostgreSQL/Supabase RLS security tests validating live draw rooms, OTP auth flows, and multi-viewport responsiveness pre-release.",
+      ],
+    },
+    {
+      title: "Full-Stack Web, QA & Automation Developer",
+      company: "Infosoft (Mini Clean Business Solutions)",
+      period: "2026",
+      bullets: [
+        "Developed full-stack web applications, REST APIs, and automated SQL migration pipelines with staging-first data validation and browser automation (Puppeteer).",
+        "Designed deterministic verification rules, automated data integrity checks, and export auditing flows to eliminate migration defects before production deployment.",
+      ],
+    },
+    {
+      title: "AI Application & Software Testing Developer",
+      company: "Freelancer",
+      period: "2024 – 2026",
+      bullets: [
+        "Engineered AI-powered applications, automated web crawling/auditing platforms (CipherLens, SQAuto), and defensive security/QA scanners evaluating SSL/TLS, HTTP headers, exposed endpoints, and repository hygiene.",
+        "Integrated multi-provider LLM pipelines (Gemini, OpenAI, Anthropic) for automated risk scoring, anomaly detection, and remediation reporting.",
+      ],
+    },
   ],
   projects: [
     {
-      title: "Gemstone Construction — Construction Operations & Financial Workspace (Sole Developer)",
-      stack: "Next.js 16, React 19, TypeScript, PostgreSQL, Supabase, Anthropic Claude AI, Leaflet, RingCentral SMS, PWA",
+      title: "Gemstone Construction — Operations & Financial Workspace (Sole Developer)",
+      url: "gemstone-construction.owsiusa.com",
+      stack: "Next.js 16, React 19, TypeScript, PostgreSQL, Supabase, Anthropic Claude AI, Leaflet, RingCentral SMS, Playwright, Vitest",
       bullets: [
-        "Personally architected full-stack construction workspace & PWA covering project budgets, AI PDF bid intake/leveling, AP invoices, and bank draws.",
-        "Built interactive multi-crew scheduler with contractor RSVP portals, automated reminder crons, and RingCentral SMS notifications.",
+        "Personally architected full-stack construction PWA covering decimal-safe project budgets, Claude AI PDF bid intake & leveling, AP invoice ledgers, bank draw requests, Leaflet maps, and multi-crew SMS scheduling.",
+        "Implemented automated Playwright E2E verification, site hydration checks, and Vitest test suites enforcing zero-regression releases across phone, tablet, and desktop viewports.",
       ],
     },
     {
       title: "OWSI Giveaways — Verified Campaign & Live Raffle Engine (Sole Developer)",
-      stack: "Next.js 16, React 19, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, Anthropic AI, Meta Graph API, Resend",
+      url: "giveaways.owsiusa.com",
+      stack: "Next.js 16, React 19, TypeScript, Supabase RLS, Tailwind CSS 4, Anthropic AI, Meta Graph API, Resend, Playwright",
       bullets: [
-        "Engineered custom Gleam replacement featuring hybrid Meta API comment verification, screenshot review queues, and passwordless OTP portals.",
-        "Implemented synchronized live raffle wheel draw rooms with weighted/equal odds, practice spins, and immutable draw audit trails.",
+        "Engineered custom Gleam replacement featuring hybrid Meta Graph API comment verification, admin screenshot review queues, passwordless 6-digit OTP portals, and synchronized live raffle wheel draw rooms.",
+        "Authored 12+ automated Playwright E2E test suites (entry-flow, review-flow, draw-flow, shared-live-room, meta-flow) and PostgreSQL RLS security tests validating campaign integrity.",
       ],
     },
     {
       title: "OWSI Notebook — Collaborative Interior Design Canvas & Client OS (Core Contributor)",
-      stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4, Zustand, TanStack Query, Supabase, PostgreSQL, Yjs, AWS S3",
+      url: "notebook.owsiusa.com",
+      stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4, Zustand, TanStack Query, Supabase, Yjs, AWS S3, Sentry, Playwright",
       bullets: [
-        "Co-developed OneNote-inspired design workspace supporting free-form canvases, rich tables, ink drawing, OneNote imports, and AI visual tools.",
-        "Built Standard/Full House design boards, slab worksheets, and scoped client-sharing portals with real-time SSE and Yjs collaboration.",
+        "Co-developed OneNote-inspired workspace supporting free-form canvases, Standard/Full House design boards, slab worksheets, AI Visual Studio tools, and scoped client-sharing portals.",
+        "Maintained automated browser/HTTP test suites, offline asset verification scripts, and Sentry error telemetry across real-time SSE and Yjs collaborative workflows.",
       ],
     },
   ],
-  experience: [
-    {
-      title: "Senior Developer (Founding Developer)",
-      company: "OWSI (Old World Stone Imports USA) & Gemstone Development LLC",
-      period: "2026 – Present",
-      bullets: [
-        "Founding core developer across dual Utah enterprises owned by Skyler Berry, directing platform architecture across both parent and sister ventures.",
-        "Delivered 3 web platforms with automated features, reducing company operational workload by 60% via embedded AI & internal tooling.",
-        "Embedded intelligent AI assistants and accelerated workflows (Onorca, LLMs) directly into platform logic for high-speed team operations.",
-      ],
-    },
-    {
-      title: "Full-Stack Web & Automation Developer",
-      company: "Infosoft (Mini Clean Business Solutions)",
-      period: "2026",
-      bullets: [
-        "Developed full-stack web applications involving database workflows, backend REST APIs, frontend dashboards, and automated pipelines.",
-        "Engineered SQL migration tooling, browser automation, data extraction, validation flows, and cloud storage deployments.",
-      ],
-    },
-    {
-      title: "AI Application Developer / Automation Builder",
-      company: "Freelancer",
-      period: "2024 – 2026",
-      bullets: [
-        "Built AI-powered application concepts, automation workflows, crawling/auditing systems, and backend-driven data tools.",
-        "Designed workflows where AI supports automation, prediction, analysis, validation, and decision support with clean system ownership.",
-      ],
-    },
-  ],
+  education: {
+    school: "University of Mindanao Digos College",
+    degree: "Bachelor of Science in Information Technology",
+  },
 };
 
-let y = page.height - 42;
+let y = page.height - 36;
 
-centeredText(y, resume.name, 21, colors.ink, "F2");
-y -= 16;
-centeredContactLine(y, resume.contactItems, 8.2);
-y -= 13;
+centeredText(y, resume.name, 20, colors.ink, "F2");
+y -= 13.5;
+centeredText(y, resume.headline, 8.8, colors.accent, "F2");
+y -= 13.5;
+centeredContactLine(y, resume.contactItems, 7.9);
+y -= 11;
 line(page.margin, y, page.width - page.margin, y, 1.15, colors.ink);
 y -= 14;
 
 y = sectionTitle(page.margin, y, "PROFESSIONAL SUMMARY");
-y = paragraph(page.margin, y, resume.summary, { size: 9.5, lineHeight: 12.8, maxChars: 112 });
+y = paragraph(page.margin, y, resume.summary, { size: 8.9, lineHeight: 11.8, maxChars: 120 });
 y -= 5;
-
-y = sectionTitle(page.margin, y, "EDUCATION");
-text(page.margin, y, resume.education.school, 10.2, colors.ink, "F2");
-y -= 12;
-text(page.margin, y, resume.education.degree, 9.0, colors.text, "F1");
-y -= 13;
 
 y = sectionTitle(page.margin, y, "TECHNICAL SKILLS");
 for (const [label, value] of resume.skills) {
-  text(page.margin, y, `${label}:`, 9.0, colors.ink, "F2");
-  y = paragraph(page.margin + 110, y, value, { size: 8.8, lineHeight: 11.2, maxChars: 90 });
-  y -= 1;
+  text(page.margin, y, `${label}:`, 8.8, colors.ink, "F2");
+  y = paragraph(page.margin + 114, y, value, { size: 8.6, lineHeight: 11.0, maxChars: 92 });
+  y -= 1.2;
 }
 
 y -= 4;
-y = sectionTitle(page.margin, y, "FEATURED PROJECTS");
-for (const project of resume.projects) {
-  text(page.margin, y, project.title, 9.8, colors.ink, "F2");
-  y -= 11;
-  text(page.margin, y, project.stack, 8.6, colors.accent, "F1");
-  y -= 10;
-  for (const bullet of project.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 8.8, lineHeight: 11.2, maxChars: 112, bullet: true });
-  }
-  y -= 3;
-}
-
-y -= 2;
-y = sectionTitle(page.margin, y, "RELEVANT EXPERIENCE");
+y = sectionTitle(page.margin, y, "WORK EXPERIENCE");
 for (const item of resume.experience) {
-  text(page.margin, y, item.title, 9.8, colors.ink, "F2");
-  const periodX = page.width - page.margin - estimateTextWidth(item.period, 8.8);
-  text(periodX, y, item.period, 8.8, colors.muted, "F1");
+  text(page.margin, y, item.title, 9.5, colors.ink, "F2");
+  const periodX = page.width - page.margin - estimateTextWidth(item.period, 8.6, true);
+  text(periodX, y, item.period, 8.6, colors.muted, "F2");
   y -= 11;
   if (item.company) {
-    text(page.margin, y, item.company, 8.6, colors.accent, "F1");
+    text(page.margin, y, item.company, 8.5, colors.accent, "F2");
     y -= 10;
   }
   for (const bullet of item.bullets) {
-    y = paragraph(page.margin, y, bullet, { size: 8.8, lineHeight: 11.2, maxChars: 112, bullet: true });
+    y = paragraph(page.margin, y, bullet, { size: 8.6, lineHeight: 11.0, maxChars: 114, bullet: true });
   }
-  y -= 3;
+  y -= 3.5;
 }
+
+y -= 2.5;
+y = sectionTitle(page.margin, y, "FEATURED PRODUCTION PROJECTS");
+for (const project of resume.projects) {
+  text(page.margin, y, project.title, 9.5, colors.ink, "F2");
+  if (project.url) {
+    const urlX = page.width - page.margin - estimateTextWidth(project.url, 8.4, true);
+    text(urlX, y, project.url, 8.4, colors.accent, "F2");
+  }
+  y -= 11;
+  text(page.margin, y, project.stack, 8.3, colors.muted, "F1");
+  y -= 10;
+  for (const bullet of project.bullets) {
+    y = paragraph(page.margin, y, bullet, { size: 8.6, lineHeight: 11.0, maxChars: 114, bullet: true });
+  }
+  y -= 3.5;
+}
+
+y -= 2.5;
+y = sectionTitle(page.margin, y, "EDUCATION");
+text(page.margin, y, `${resume.education.school} — ${resume.education.degree}`, 9.1, colors.ink, "F2");
+y -= 10;
 
 const stream = content.join("\n");
 const pdfObjects = [];
@@ -314,8 +336,8 @@ const pdfObjects = [];
 pdfObjects[1] = `<< /Type /Catalog /Pages 2 0 R >>`;
 pdfObjects[2] = `<< /Type /Pages /Count 1 /Kids [3 0 R] >>`;
 pdfObjects[3] = `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${page.width} ${page.height}] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>`;
-pdfObjects[4] = `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>`;
-pdfObjects[5] = `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>`;
+pdfObjects[4] = `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>`;
+pdfObjects[5] = `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>`;
 pdfObjects[6] = `<< /Length ${Buffer.byteLength(stream, "utf8")} >>\nstream\n${stream}\nendstream`;
 
 let output = "%PDF-1.4\n";
@@ -339,4 +361,3 @@ output += `trailer\n<< /Size ${pdfObjects.length} /Root 1 0 R >>\nstartxref\n${x
 const outputPath = path.join(process.cwd(), "public", "Arjay-Escabas-Resume.pdf");
 fs.writeFileSync(outputPath, output, "binary");
 console.log(`Wrote ${outputPath}. Final y: ${y}`);
-

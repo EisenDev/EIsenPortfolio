@@ -268,7 +268,11 @@ This log tracks major implementation milestones and content updates for the my-p
   3. **OWSI Notebook** (`https://notebook.owsiusa.com/`) — Core Contributor (2-Dev Team) · Live Production.
 - **Live Landing Page Screenshots:** Captured high-resolution 16:9 landing page screenshots directly from the production URLs and saved them to `public/projects/gemstone-construction.png`, `public/projects/owsi-giveaways.png`, and `public/projects/owsi-notebook.png`.
 - **Codebase-Verified Details:** Populated accurate stack chips and architectural highlights from the local production repositories (`/home/eisen/workspace/Gemstone Constructions`, `/home/eisen/workspace/OWSI-giveaway`, and `/home/eisen/workspace/owsi-new/owsi-app`).
-- **Resume PDF Sync:** Updated `scripts/generate-resume-pdf.mjs` and regenerated `public/Arjay-Escabas-Resume.pdf`.
+- **Resume PDF Sync & Multi-Role Screening Optimization:** Upgraded `scripts/generate-resume-pdf.mjs` and regenerated `public/Arjay-Escabas-Resume.pdf` targeting **AI Developer / AI Engineer**, **Full-Stack Developer**, and **QA / Web / Software Tester** screenings:
+  - Added multi-role headline (`SENIOR FULL-STACK DEVELOPER | AI ENGINEER | QA & TEST AUTOMATION`).
+  - Re-ordered `WORK EXPERIENCE` directly above `FEATURED PRODUCTION PROJECTS` and placed `EDUCATION` at the bottom so current US enterprise experience leads the resume.
+  - Added dedicated `AI Engineering & LLMs` and `QA & Test Automation` skill rows (Anthropic Claude SDK, Gemini API, Onorca, Playwright E2E, Vitest, SQL/RLS Security Testing, Sentry).
+  - Fixed PDF Type1 `/WinAnsiEncoding` character escaping so bullets (`•`), en-dashes (`–`), and em-dashes (`—`) render cleanly, and added per-glyph width calculation so right-aligned dates and live project URLs align accurately within single-page bounds (`Final y: 38.5`).
 
 
 
